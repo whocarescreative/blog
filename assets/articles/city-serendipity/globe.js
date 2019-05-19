@@ -2,9 +2,8 @@
 const canvas = document.getElementById('canvas');
 // const canvas = document.createElement('canvas');
 
-// canvas.id = 'someId';
-canvas.height = 400;
-canvas.width = 400;
+canvas.height = 750;
+canvas.width = 1000;
 
 // globeSpan.appendChild(canvas);
 
@@ -15,14 +14,14 @@ image.addEventListener('load', () => {
   draw();
   console.log('drawing');
 });
-image.src = 'https://i.ibb.co/mJc3r1H/eiffell-globe.png';
+image.src = 'assets/articles/city-serendipity/globe.png';
 const FRAME_COUNT = 8;
-const FRAME_HEIGHT = 400;
-const FRAME_WIDTH = 400;
+const FRAME_HEIGHT = 750;
+const FRAME_WIDTH = 1000;
 
 const FRAME_Y_OFFSET = 0;
 
-let speed = 1;
+let speed = 2;
 let step = 0;
 let pos = 0;
 function draw() {
