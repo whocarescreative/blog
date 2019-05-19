@@ -58,8 +58,7 @@ Stay for a few hours at free concert you heard a few blocks away.
 }
 
 .sounds--img:nth-child(2) {
-  height: 400px;
-  animation-delay: 0s;
+  height: 250px;
   background-image: url('assets/articles/city-serendipity/img/street.jpg');
 
 }
@@ -120,22 +119,23 @@ Stay for a few hours at free concert you heard a few blocks away.
 
   .sounds--img:nth-child(2) {
     width: calc(50% - 10px);
-    height: 300px;
+    /* height: 300px; */
   }
 
   .sounds--img:nth-child(3) {
     width: calc(50% - 10px);
     right:0;
-    height: 300px;
-    top: 60px;
+    height: 350px;
+    top: 30px;
     margin: 0;
   }
 
   .sounds--img:nth-child(4) {
     width: calc(50% - 10px);
     left:0;
-    height: 300px;
-    top: 320px;
+    /* height: 300px; */
+    background-position: 80% center;
+    top: 270px;
   }
 }
 
