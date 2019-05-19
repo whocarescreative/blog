@@ -58,7 +58,9 @@ function drag(ev) {
                 cards[cardIndex].classList.add('gone--left')
             }
             
-            cardIndex++;
+            if (cardIndex < cards.length - 1) {
+                cardIndex++;
+            }
         } 
     }
 }

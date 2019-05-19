@@ -66,6 +66,8 @@ You can’t plan how you feel when meeting a person for the first time, and it�
 
 
 Condensing a city into a checklist is offensive, and a detailed itinerary is a prelude to stress. 
+
+
 Cities welcome serendipity. Travel, in my opinion, should be improvised, spontaneous, and instinctual.  When you’re exploring a city, let your senses lead the way.
 
 Eat where you. Your nose will not let you down.
