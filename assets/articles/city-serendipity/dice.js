@@ -125,6 +125,7 @@ function init() {
     container.addEventListener("mousemove", onMouseMove, false );
     container.addEventListener("mousedown", onMouseDown, false );
     container.addEventListener("mouseup", onMouseUp, false );
+    container.addEventListener("mouseleave", onMouseUp, false );
 
     //touch
     container.addEventListener('touchstart', onTouchDown, false);
