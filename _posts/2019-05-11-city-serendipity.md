@@ -36,69 +36,50 @@ Stay for a few hours at free concert you heard a few blocks away.
 
 <style>
 #sounds {
-  /* float: right; */
   height: 350px;
   position: relative;
-  max-width:900px;
-  /* width: 250px; */
-  /* margin-right: -10px; */
-  margin: 0 auto;
-  left: 60px;
-  clear: both;
-  /* border: 30px solid white; */
+  width: 100%;
+  max-width:990px;
+  margin: 30px auto;
+  display: flex;
+  justify-content: space-between;
 }
 
 .sounds--img {
-    /* opacity: 0.2; */
-    transition: all 0.5s ease-in-out;
+  opacity: 0.3;
+  width: 30%;
+  background-size: cover;
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
+
 .sounds--img.active {
     opacity: 1;
+    transform: translateY(-10px);
 }
 
 .sounds--img:nth-child(2) {
-  position: absolute;
-  
   height: 400px;
-  width: 300px;
-  background: linear-gradient(to right, #ec6f66, #f3a183);
   animation-delay: 0s;
   background-image: url('assets/articles/city-serendipity/img/street.jpg');
-      background-size: cover;
 
 }
 
-.sounds--img.active:nth-child(2) {
-    transform: translate(0, -20px);
-}
 .sounds--img:nth-child(3) {
-  position: absolute;
   height: 350px;
-  width: 200px;
-  background: linear-gradient(to right, #7474bf, #348ac7);
-  transform: translate(300px, 90px);
-background-size: cover;
-}
-
-.sounds--img.active:nth-child(3) {
-   transform: translate(270px, 45px);
+  margin-top: 80px;
+  background-image: url('assets/articles/city-serendipity/img/street.jpg');
 }
 
 .sounds--img:nth-child(4) {
-  position: absolute;
   height: 250px;
-  width: 250px;
-  background: linear-gradient(to right, #283048, #4CAF50);
-  transform: translate(560px, -180px);
-      background-size: cover;
-    background-position: 80% center;
+  right:0;
   background-image: url('assets/articles/city-serendipity/img/park.jpg')
 
 }
 
 
 .sounds--img.active:nth-child(4) {
-  transform: translate(560px, -150px);
+  /* transform: translate(560px, -150px); */
 }
 
 
@@ -110,14 +91,58 @@ background-size: cover;
 
 #sounds--btn {
     position: absolute;
-    top:100px;
-    left:-50px;
+    width:100px;
+    top:10px;
+    margin: 0 auto;
+    left:0;right:0;
+    font-weight:bold;
+    /* transform: translateX(-50px) */
+}
+
+@media (max-width: 900px) {
+  #sounds {
+    height: 630px;
+    display: block;
+    flex-direction: column;
+  }
+
+  #sounds--btn {
+    right: 10px;
+    top: auto;
+    bottom: 200px;
+    margin: auto;
+    left: auto;
+  }
+  
+  .sounds--img {
+    position: absolute;
+  }
+
+  .sounds--img:nth-child(2) {
+    width: calc(50% - 10px);
+    height: 300px;
+  }
+
+  .sounds--img:nth-child(3) {
+    width: calc(50% - 10px);
+    right:0;
+    height: 300px;
+    top: 60px;
+    margin: 0;
+  }
+
+  .sounds--img:nth-child(4) {
+    width: calc(50% - 10px);
+    left:0;
+    height: 300px;
+    top: 320px;
+  }
 }
 
 </style>
 
  <div id="sounds">
-    <button data-playing="false" id="sounds--btn">Play</button>
+    <div data-playing="false" id="sounds--btn">Play</div>
     <div class="sounds--img"></div>
     <div class="sounds--img"></div>
     <div class="sounds--img"></div>
