@@ -17,7 +17,7 @@ Array.from(audioElements).forEach(ae => {
 
 function next() {
     pause();
-    if (playIndex == 3) {
+    if (playIndex == 2) {
         playIndex = 0;
         audioElement = audioElements[playIndex];
         return;
