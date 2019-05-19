@@ -159,6 +159,14 @@ function onMouseMove(e){
             moveJointToPoint(pos.x,pos.y,pos.z);
         }
     }
+
+    var entity = findNearestIntersectingObject(e.offsetX,e.offsetY,camera,meshes);
+    var pos = entity.point;
+    if(pos && entity.object.geometry instanceof THREE.BoxGeometry){
+        container.style.cursor = 'grab';
+    } else {
+        container.style.cursor = 'auto';
+    }
 }
 
 function onTouchDown(e) {

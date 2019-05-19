@@ -4,7 +4,7 @@ title:  City Serendipity
 snaketitle: city-serendipity
 subtitle: 'A different way to travel'
 ---
-<canvas id='canvas' height='400' width='400'></canvas>
+<canvas id='canvas' class="grab-cursor"></canvas>
 <h1>City Playground</h1>
 <h2 class="mb-5">Have fun with it</h2>
 
@@ -48,6 +48,10 @@ You know very little about the person you are seeing. That's the reason for your
 
 .card.gone--left {
     transform: translate(-150vh) rotate(-70deg) !important;
+}
+
+.grab-cursor {
+  cursor: grab;
 }
 </style>
 <div id="cards">
