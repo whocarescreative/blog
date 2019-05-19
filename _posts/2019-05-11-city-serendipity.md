@@ -72,17 +72,91 @@ Cities welcome serendipity. Travel, in my opinion, should be improvised, spontan
 
 Eat where you. Your nose will not let you down.
 Catch a glimpse of green, and walk to the park. Have a picnic.
+
 Stay for a few hours at free concert you heard a few blocks away. 
 
-**Or just sit down, look around your new surroundings, and listen.**
+## **Or just sit down, look around your new surroundings, and listen.**
 
-<div class="text-center mt-5 mb-2 d-block" style="height:100px;position:relative" id="sounds" data-playing="false" role="switch" aria-checked="false">
-    <audio src="assets/articles/city-serendipity/mp3/city-center.mp3" type="audio/mpeg"></audio>
-    <img class="mx-auto" id="play" style="position:relative;height:100%;width:200px;object-fit:scale-down;cursor:pointer;" src="assets/articles/city-serendipity/img/play.png" />
-    <img class="mx-auto" id="pause" style="position:relative;height:100%;width:200px;object-fit:scale-down;cursor:pointer;display:none" src="assets/articles/city-serendipity/img/pause.png" />
-    <img class="mx-auto" id="watercolor" style="height:130px;width:400px;position:absolute;left:0;top:0;right:0;z-index:-1" src="assets/articles/city-serendipity/img/watercolor.png" />
+
+<style>
+#sounds {
+  /* float: right; */
+  height: 250px;
+  position: relative;
+  width: 250px;
+  margin-left: 100px;
+  clear: both;
+  border: 30px solid white;
+}
+
+.sounds--img {
+    opacity: 0.2;
+    transition: all 0.5s ease-in-out;
+}
+.sounds--img.active {
+    opacity: 1;
+}
+
+.sounds--img:nth-child(2) {
+  position: absolute;
+  height: 250px;
+  width: 250px;
+  background: linear-gradient(to right, #ec6f66, #f3a183);
+  animation-delay: 0s;
+}
+
+.sounds--img.active:nth-child(2) {
+    transform: translate(0, -20px);
+}
+.sounds--img:nth-child(3) {
+  position: absolute;
+  height: 350px;
+  width: 270px;
+  background: linear-gradient(to right, #7474bf, #348ac7);
+  transform: translate(270px, 90px);
+}
+
+.sounds--img.active:nth-child(3) {
+   transform: translate(270px, 45px);
+}
+
+.sounds--img:nth-child(4) {
+  position: absolute;
+  height: 400px;
+  width: 300px;
+  background: linear-gradient(to right, #283048, #4CAF50);
+  transform: translate(560px, -180px);
+}
+
+
+.sounds--img.active:nth-child(4) {
+  transform: translate(560px, -150px);
+}
+
+
+
+@keyframes move {
+  from { opacity: 0.2 }
+  to   { opacity: 1; }
+}
+
+#sounds--btn {
+    position: absolute;
+    top:100px;
+    left:-50px;
+}
+
+</style>
+
+ <div id="sounds">
+    <button data-playing="false" id="sounds--btn">Play</button>
+    <div class="sounds--img"></div>
+    <div class="sounds--img"></div>
+    <div class="sounds--img"></div>
+    <audio class="sounds--audio" src="assets/articles/city-serendipity/mp3/street.mp3" type="audio/mpeg"></audio>
+    <audio class="sounds--audio" src="assets/articles/city-serendipity/mp3/cafe.mp3" type="audio/mpeg"></audio>
+    <audio class="sounds--audio" src="assets/articles/city-serendipity/mp3/park.mp3" type="audio/mpeg"></audio>
 </div>
-<div class="text-center mb-5" id="sounds-text" style="color:#0871AF;font-size:20px;">Play</div> 
 
 
 By avoiding someone else’s curated guide, you start to create your own relationship with the city. Discovering your own taste, as you would with music, movies, or art. 
@@ -92,7 +166,7 @@ You don’t have to avoid all the tourist areas. If you are visiting the place b
 But I also invite you to ask a human, not Google. Don’t avoid a place because it has 3.9 stars instead of four.
 
 Find a hole-in-the-wall restaurant. Get food poisoning, or have a delicious, unusual meal that you wouldn't find back home.
-Drink some shitty coffee, or have an incredible esperesso.
+Drink some shitty coffee, or have an incredible espresso.
 
 Fill up your memory card, or don't take any photos.
 This is your trip.
@@ -102,7 +176,7 @@ Have fun with it, and relax with the thought you will never end up seeing everyt
 I travel to feel like a kid again. And I know kids don’t have itineraries. 
 Kids don’t predict how they will feel like four months in advance, which is exactly what happens when creating a hour-by-hour schedule for your travels.
 
-Kids play.
+Kids play, instead.
 
 <div id="dice"></div>
 
