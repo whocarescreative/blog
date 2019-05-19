@@ -10,54 +10,10 @@ subtitle: 'A different way to travel'
 
 Going to a new city is like going on a first date.
 
+You are 
+
 You know very little about the person you are seeing. That's the reason for your excitement. You are showing up at a specified time with no expectations. You can look at your date's online profile for as long as you want, but you will never know how you will feel until you start speaking face-to-face. 
 
-<style>
-#cards {
-    margin: 0 auto;
-    width:100%;
-    height:500px;
-    position: relative;
-    overflow-y: hidden;
-    overflow-x: hidden;
-}
-.card {
-    height: 400px;
-    width:300px;
-    top:50px;
-    right:0;left:0;
-    margin:0 auto;
-    background: blue;
-    position: absolute;
-    transition: transform 0.1s;
-    z-index:99;
-    opacity:0.3;
-}
-
-.card.active {
-    z-index: 100;
-    opacity:1;
-}
-.card.gone {
-    transition: transform 1s;
-}
-
-.card.gone--right {
-    transform: translate(150vh) rotate(70deg) !important;
-}
-
-.card.gone--left {
-    transform: translate(-150vh) rotate(-70deg) !important;
-}
-</style>
-<div id="cards">
-    <div class="card"></div>
-    <div class="card"></div>
-    <div class="card"></div>
-</div>
-
-
-Of course, you might have a few questions prepared, but I don’t think your date would appreciate an interrogation.
 
 You can’t plan how you feel when meeting a person for the first time, and it’s the same when you arrive to a new city.
 
@@ -81,16 +37,19 @@ Stay for a few hours at free concert you heard a few blocks away.
 <style>
 #sounds {
   /* float: right; */
-  height: 250px;
+  height: 350px;
   position: relative;
-  width: 250px;
-  margin-left: 100px;
+  max-width:900px;
+  /* width: 250px; */
+  /* margin-right: -10px; */
+  margin: 0 auto;
+  left: 60px;
   clear: both;
-  border: 30px solid white;
+  /* border: 30px solid white; */
 }
 
 .sounds--img {
-    opacity: 0.2;
+    /* opacity: 0.2; */
     transition: all 0.5s ease-in-out;
 }
 .sounds--img.active {
@@ -99,10 +58,14 @@ Stay for a few hours at free concert you heard a few blocks away.
 
 .sounds--img:nth-child(2) {
   position: absolute;
-  height: 250px;
-  width: 250px;
+  
+  height: 400px;
+  width: 300px;
   background: linear-gradient(to right, #ec6f66, #f3a183);
   animation-delay: 0s;
+  background-image: url('assets/articles/city-serendipity/img/street.jpg');
+      background-size: cover;
+
 }
 
 .sounds--img.active:nth-child(2) {
@@ -111,9 +74,10 @@ Stay for a few hours at free concert you heard a few blocks away.
 .sounds--img:nth-child(3) {
   position: absolute;
   height: 350px;
-  width: 270px;
+  width: 200px;
   background: linear-gradient(to right, #7474bf, #348ac7);
-  transform: translate(270px, 90px);
+  transform: translate(300px, 90px);
+background-size: cover;
 }
 
 .sounds--img.active:nth-child(3) {
@@ -122,10 +86,14 @@ Stay for a few hours at free concert you heard a few blocks away.
 
 .sounds--img:nth-child(4) {
   position: absolute;
-  height: 400px;
-  width: 300px;
+  height: 250px;
+  width: 250px;
   background: linear-gradient(to right, #283048, #4CAF50);
   transform: translate(560px, -180px);
+      background-size: cover;
+    background-position: 80% center;
+  background-image: url('assets/articles/city-serendipity/img/park.jpg')
+
 }
 
 
