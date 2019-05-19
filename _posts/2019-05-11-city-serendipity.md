@@ -66,7 +66,7 @@ Stay for a few hours at free concert you heard a few blocks away.
 .sounds--img:nth-child(3) {
   height: 350px;
   margin-top: 80px;
-  background-image: url('assets/articles/city-serendipity/img/street.jpg');
+  background-image: url('assets/articles/city-serendipity/img/night.jpg');
 }
 
 .sounds--img:nth-child(4) {
