@@ -4,13 +4,13 @@ title:  City Serendipity
 snaketitle: city-serendipity
 subtitle: 'A different way to travel'
 ---
-<canvas id='canvas' height='400' width='400'></canvas>
+<canvas id='canvas' class="grab-cursor"></canvas>
 <h1>City Playground</h1>
 <h2 class="mb-5">Have fun with it</h2>
 
 Going to a new city is like going on a first date.
 
-You are 
+You know very little about the person you are seeing. That's the reason for your excitement. You are showing up at a specified time with no expectations. You can look at your date's online profile for as long as you want, but you will never know how you will feel until you start speaking face-to-face. 
 
 You know very little about the person you are seeing. That's the reason for your excitement. You are showing up at a specified time with no expectations. You can look at your date's online profile for as long as you want, but you will never know how you will feel until you start speaking face-to-face. 
 
