@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Freedom of Travel
+title:  Creative Travel
 snaketitle: city-serendipity
 subtitle: 'Lose the itinerary'
 ---
@@ -28,11 +28,20 @@ subtitle: 'Lose the itinerary'
 
   .title-text {
     font-size: 60px;
+    
     font-family: 'Varela Round', Helvetica, sans-serif;
     font-weight: bold;
     margin: 0;
+    margin-bottom: 5px;
     letter-spacing: 4px;
+    text-transform: uppercase;
     line-height: 60px;
+  }
+
+  .title-date {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-family: 'Varela Round', Helvetica, sans-serif;
   }
 
   #canvas {
@@ -79,8 +88,19 @@ subtitle: 'Lose the itinerary'
 <div class="hero">
   <canvas id='canvas' class="grab-cursor" height="568px" width="666px"></canvas>
   <div class="title">
-    <h1 class="title-text">FREEDOM OF TRAVEL</h1>
-    <h2 class="mb-5 title-subtext">Lose the itinerary</h2>
+    <h3 class="title-date">
+    {% assign d = page.date | date: "%-d"  %}
+  {{ page.date | date: "%B" }} 
+  {% case d %}
+    {% when '1' or '21' or '31' %}{{ d }}st
+    {% when '2' or '22' %}{{ d }}nd
+    {% when '3' or '23' %}{{ d }}rd
+    {% else %}{{ d }}th
+    {% endcase %}, 
+  {{ page.date | date: "%Y" }}
+    </h3>
+    <h1 class="title-text">{{ page.title }}</h1>
+    <h2 class="title-subtext">{{ page.subtitle }}</h2>
   </div>
 </div>
 
@@ -121,7 +141,7 @@ Catch a glimpse of green, and go to the park. Daydream. Have a picnic, or a beer
 
 <style>
 #sounds {
-  height: 450px;
+  height: 480px;
   position: relative;
   width: 100%;
   max-width:990px;
@@ -143,9 +163,15 @@ Catch a glimpse of green, and go to the park. Daydream. Have a picnic, or a beer
 #sounds--btn {
   cursor: pointer;
    font-family: 'Varela Round', Helvetica, sans-serif;
-   text-decoration: underline;
    font-size: 30px;
    text-align: center;
+   position: absolute;
+    top:10px;
+    margin: 0 auto;
+    left:0;right:0;
+    font-weight:bold;
+    border-bottom: 3px solid black;
+    width: 90px;
 }
 
 .sounds--img.active {
@@ -160,7 +186,7 @@ Catch a glimpse of green, and go to the park. Daydream. Have a picnic, or a beer
 }
 
 .sounds--img:nth-child(3) {
-  height: 450px;
+  height: 400px;
   margin-top: 80px;
   background-image: url('assets/articles/city-serendipity/img/night.jpg');
 }
@@ -169,41 +195,22 @@ Catch a glimpse of green, and go to the park. Daydream. Have a picnic, or a beer
   height: 350px;
   background-size: cover;
   right:0;
+  background-position: right center;
   background-image: url('assets/articles/city-serendipity/img/park.jpg')
 }
 
 
-.sounds--img.active:nth-child(4) {
-  /* transform: translate(560px, -150px); */
-}
-
-
-
-@keyframes move {
-  from { opacity: 0.2 }
-  to   { opacity: 1; }
-}
-
-#sounds--btn {
-    position: absolute;
-    /* width:100px; */
-    top:10px;
-    margin: 0 auto;
-    left:0;right:0;
-    font-weight:bold;
-    /* transform: translateX(-50px) */
-}
-
 #sounds--btn:after {
-  content: ' ▶'
+  content: ' ▶';
+  font-size: 22px;
 }
 
 #sounds--btn.playing:after {
-  content: '  '
+  content: ' '
 }
 
 .sounds--btn--span {
-  text-decoration: none;
+  text-decoration: underline;
   letter-spacing: -1px;
 }
 
@@ -211,15 +218,15 @@ Catch a glimpse of green, and go to the park. Daydream. Have a picnic, or a beer
 
 @media (max-width: 900px) {
   #sounds {
-    height: 630px;
+    height: 530px;
     display: block;
     flex-direction: column;
   }
 
   #sounds--btn {
-    right: 10px;
+    right: 20px;
     top: auto;
-    bottom: 200px;
+    bottom: 90px;
     margin: auto;
     left: auto;
   }
@@ -245,7 +252,7 @@ Catch a glimpse of green, and go to the park. Daydream. Have a picnic, or a beer
   .sounds--img:nth-child(4) {
     width: calc(50% - 10px);
     left:0;
-    height: 300px;
+    height: 200px;
     background-position: 80% center;
     top: 320px;
   }
@@ -254,9 +261,7 @@ Catch a glimpse of green, and go to the park. Daydream. Have a picnic, or a beer
 </style>
 
  <div id="sounds">
-    <div data-playing="false" id="sounds--btn">
-      <span>Play</span>
-    </div>
+    <div data-playing="false" id="sounds--btn">Play</div>
     <div class="sounds--img"></div>
     <div class="sounds--img"></div>
     <div class="sounds--img"></div>
@@ -276,7 +281,7 @@ Besides, isn't discovering a spot without plans and in the internet just more fu
 
 Travel is an opportunity to play.
 
-And if I really want to feel like a kid again, I take any chance I can get to play.
+And if you too, want to feel like a kid again, you should play at any chance you get.
 
 <div id="dice"></div>
 
