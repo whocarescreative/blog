@@ -52,12 +52,16 @@ btn.addEventListener('click',  () => {
 
 function play() {
     btn.dataset.playing = 'true';
+    btn.innerText = 'Pause';
     audioElement.play();
+    btn.classList.toggle('playing');
     soundImgs[playIndex].classList.toggle('active');
 }
 
 function pause() {
-    audioElement.pause();
-    soundImgs[playIndex].classList.toggle('active');
     btn.dataset.playing = 'false';
+    btn.innerText = 'Play';
+    audioElement.pause();
+    btn.classList.toggle('playing');
+    soundImgs[playIndex].classList.toggle('active');
 }

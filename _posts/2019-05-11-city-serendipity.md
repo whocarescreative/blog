@@ -80,9 +80,9 @@ Sure, I am capable of running around aimlessly when I am at home too. I probably
 
 But when I'm on the road, there is one crucial lesson that I try to follow from kids.
 
-It's definitely not how to do basic arithmetic.
+It's definitely not how to do basic arithmetic. That’s too advanced for me.
 
-Instead, their approach to their day:
+Instead, it’s the approach to their day:
 
 **The ability to disregard plans.**
 
@@ -100,7 +100,7 @@ With such an mix of environment, people and senses, cities welcome surprise on t
 
 You might share the same perspective on travel. But if you don't, I invite you to spend a day in a new place letting go of your plans, and letting your senses lead the way instead. Step outside, and walk with no destination.
 
-Eat some fresh bread you smelt across the street. Your nose will not let you down.
+Eat some fresh bread you smelled across the street. Your nose will not let you down.
 
 Stop and listen to a free concert you heard a few blocks away. Linger for an hour.
 
@@ -111,26 +111,31 @@ Catch a glimpse of green, and go to the park. Daydream. Have a picnic, or a beer
 
 <style>
 #sounds {
-  height: 350px;
+  height: 450px;
   position: relative;
   width: 100%;
   max-width:990px;
   margin: 30px auto;
   display: flex;
   justify-content: space-between;
+
 }
 
 .sounds--img {
   cursor: pointer;
-  opacity: 0.3;
+  opacity: 0.7;
   width: 30%;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
 
 #sounds--btn {
   cursor: pointer;
+   font-family: 'Varela Round', Helvetica, sans-serif;
+   text-decoration: underline;
+   font-size: 30px;
+   text-align: center;
 }
 
 .sounds--img.active {
@@ -139,22 +144,22 @@ Catch a glimpse of green, and go to the park. Daydream. Have a picnic, or a beer
 }
 
 .sounds--img:nth-child(2) {
-  height: 250px;
+  height: 350px;
   background-image: url('assets/articles/city-serendipity/img/street.jpg');
-
+  background-position: center 60%;
 }
 
 .sounds--img:nth-child(3) {
-  height: 350px;
+  height: 450px;
   margin-top: 80px;
   background-image: url('assets/articles/city-serendipity/img/night.jpg');
 }
 
 .sounds--img:nth-child(4) {
-  height: 250px;
+  height: 350px;
+  background-size: cover;
   right:0;
   background-image: url('assets/articles/city-serendipity/img/park.jpg')
-
 }
 
 
@@ -171,13 +176,28 @@ Catch a glimpse of green, and go to the park. Daydream. Have a picnic, or a beer
 
 #sounds--btn {
     position: absolute;
-    width:100px;
+    /* width:100px; */
     top:10px;
     margin: 0 auto;
     left:0;right:0;
     font-weight:bold;
     /* transform: translateX(-50px) */
 }
+
+#sounds--btn:after {
+  content: ' ▶'
+}
+
+#sounds--btn.playing:after {
+  content: '  '
+}
+
+.sounds--btn--span {
+  text-decoration: none;
+  letter-spacing: -1px;
+}
+
+
 
 @media (max-width: 900px) {
   #sounds {
@@ -201,7 +221,7 @@ Catch a glimpse of green, and go to the park. Daydream. Have a picnic, or a beer
 
   .sounds--img:nth-child(2) {
     width: calc(50% - 10px);
-    /* height: 300px; */
+    height: 300px;
   }
 
   .sounds--img:nth-child(3) {
@@ -215,16 +235,18 @@ Catch a glimpse of green, and go to the park. Daydream. Have a picnic, or a beer
   .sounds--img:nth-child(4) {
     width: calc(50% - 10px);
     left:0;
-    /* height: 300px; */
+    height: 300px;
     background-position: 80% center;
-    top: 270px;
+    top: 320px;
   }
 }
 
 </style>
 
  <div id="sounds">
-    <div data-playing="false" id="sounds--btn">Play</div>
+    <div data-playing="false" id="sounds--btn">
+      <span>Play</span>
+    </div>
     <div class="sounds--img"></div>
     <div class="sounds--img"></div>
     <div class="sounds--img"></div>
