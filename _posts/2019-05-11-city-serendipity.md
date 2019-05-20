@@ -187,6 +187,7 @@ Stay for a few hours at free concert you heard a few blocks away.
   
   .sounds--img {
     position: absolute;
+    background-size: cover;
   }
 
   .sounds--img:nth-child(2) {
