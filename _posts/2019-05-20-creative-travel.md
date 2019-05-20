@@ -12,14 +12,11 @@ snaketitle: 'creative-travel'
     <h3 class="title-date">
     {% assign d = page.date | date: "%-d"  %}
 
-    {{ page.date | date: "%B" }} 
-    {% case d %}
+    {{ page.date | date: "%B" }} {% case d %}
       {% when '1' or '21' or '31' %}{{ d }}st
       {% when '2' or '22' %}{{ d }}nd
       {% when '3' or '23' %}{{ d }}rd
-      {% else %}{{ d }}th
-      {% endcase %}, 
-    {{ page.date | date: "%Y" }}
+      {% else %}{{ d }}th{% endcase %}, {{ page.date | date: "%Y" }}
     </h3>
     <h1 class="title-text">{{ page.title }}</h1>
     <h2 class="title-subtext">{{ page.subtitle }}</h2>
