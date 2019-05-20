@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  City Serendipity
+title:  Freedom of Travel
 snaketitle: city-serendipity
-subtitle: 'A different way to travel'
+subtitle: 'Lose the itinerary'
 ---
 <style>
   .hero {
@@ -70,34 +70,45 @@ subtitle: 'A different way to travel'
   <canvas id='canvas' class="grab-cursor" height="568px" width="666px"></canvas>
   <div class="title">
     <h1 class="title-text">FREEDOM OF TRAVEL</h1>
-    <h2 class="mb-5 title-subtext">Lose the itinerary.</h2>
+    <h2 class="mb-5 title-subtext">Lose the itinerary</h2>
   </div>
 </div>
 
-Going to a new city is like going on a first date.
+I travel because it makes me feel like a kid. Looking at my surroundings for the first time. Running around aimlessly, placing full attention on the present.
 
-You know very little about the person you are seeing. That's the reason for your excitement. You are showing up at a specified time with no expectations. You can look at your date's online profile for as long as you want, but you will never know how you will feel until you start speaking face-to-face. 
+Sure, I am capable of running around aimlessly when I am at home too. I probably do that more than I should.
 
-You know very little about the person you are seeing. That's the reason for your excitement. You are showing up at a specified time with no expectations. You can look at your date's online profile for as long as you want, but you will never know how you will feel until you start speaking face-to-face. 
+But when I'm on the road, there is one crucial lesson that I try to follow from kids.
+
+It's definitely not how to do basic arithmetic.
+
+Instead, their approach to their day:
+
+**The ability to disregard plans.**
+
+To me, exploring a new place is a great excuse to appreciate the novelty of the moment. And when I impose a detailed itinerary on myself when I arrive into a new city, I feel like I'm inviting stress. Not only that, I feel like I'm offending the my destination by distilling into a simple checklist.
+
+I have to-do lists when I am at home. And to me, it doesn't make sense to do the same when I'm trying to remove  when traveling. I can lose the stiff shell of routine.
+
+I understand that research is necessary. Research allows you to understand what is available, and what to avoid. But there is a part of me that says: wouldn't it be great if I was surprised to see the Eiffel Tower in Paris?
 
 
-You can’t plan how you feel when meeting a person for the first time, and it’s the same when you arrive to a new city.
+<div style="width:200px;height:200px;background:red"></div>
 
 
-**So, why make plans in the first place?**
+In my opinion, travel should be instinctual, and spontaneous. Because being in a new city with no plan is the perfect opportunity to experience a unique kind of freedom.
 
+With such an mix of environment, people and senses, cities welcome surprise on their own. Serendipity is bound to happen if you lose yourself in this boiling pot of stories, and chance encounters. 
 
-Condensing a city into a checklist is offensive, and a detailed itinerary is a prelude to stress. 
+You might share the same perspective on travel. But if you don't, I invite you to spend a day in a new place letting go of your plans, and letting your senses lead the way instead. Step outside, and walk with no destination.
 
+Eat some fresh bread you smelt across the street. You nose will not let you down.
 
-Cities welcome serendipity. Travel, in my opinion, should be improvised, spontaneous, and instinctual.  When you’re exploring a city, let your senses lead the way.
+Stop and listen to a free concert you heard a few blocks away. Linger for an hour.
 
-Eat where you. Your nose will not let you down.
-Catch a glimpse of green, and walk to the park. Have a picnic.
+Catch a glimpse of green, and go to the park. Daydream. Have a picnic, or a beer.
 
-Stay for a few hours at free concert you heard a few blocks away. 
-
-<p class="big"><strong>Or just sit down, look around your new surroundings, and listen.</strong></p>
+**Or just sit, pause, and listen to your new surroundings.**
 
 
 <style>
@@ -225,30 +236,34 @@ Stay for a few hours at free concert you heard a few blocks away.
 </div>
 
 
-By avoiding someone else’s curated guide, you start to create your own relationship with the city. Discovering your own taste, as you would with music, movies, or art. 
+By following your instincts instead of a curated guide, you can start creating your own, unique relationship with a city. You can read all about your destination beforehand, but you won’t know how you feel until you get there. It’s like online dating.
 
-You don’t have to avoid all the tourist areas. If you are visiting the place because its past is important to you, and you’ve done the research, do it. If it's been your life long dream to see the Eiffel Tower, do it. This is your trip. 
+And when there is such an abundance of possibilities, you can relax knowing you won’t get to see every place or landmark a destination has to offer. Finding your taste for travel is the same as discovering your own taste in art, music or film. Out of all the choices, you find what attracts you.
 
-But I also invite you to ask a human, not Google. Don’t avoid a place because it has 3.9 stars instead of four.
+I also encourage you to ask a human, not Google. Avoiding a place because it has 3.9 stars and not four isn’t practical, and you might make a new friend while dining at a hole-in-the-wall restaurant. 
 
-Find a hole-in-the-wall restaurant. Get food poisoning, or have a delicious, unusual meal that you wouldn't find back home.
-Drink some shitty coffee, or have an incredible espresso.
+Besides, isn't discovering a spot without plans and in the internet just more fun?
 
-Fill up your memory card, or don't take any photos.
-This is your trip.
+Travel is an opporunity to play.
 
-Have fun with it, and relax with the thought you will never end up seeing everything, because chances are, you haven’t even seen half of what your *own* city has to offer.
-
-I travel to feel like a kid again. And I know kids don’t have itineraries. 
-Kids don’t predict how they will feel like four months in advance, which is exactly what happens when creating a hour-by-hour schedule for your travels.
-
-Kids play, instead.
+And if I really want to feel like a kid again, I take any chance I can get to play.
 
 <div id="dice"></div>
 
 Travel is creative.
 
 Be creative.
+
+
+---
+
+   
+<p style="padding-bottom:20px"></p>
+
+<p style="text-align:center; font-size:15px;"> Whocares? </p>
+
+
+
 
 
 
