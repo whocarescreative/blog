@@ -1,4 +1,6 @@
 const btn = document.getElementById('sounds--btn');
+const btnSpan = btn.firstChild;
+
 const soundImgs = document.getElementsByClassName('sounds--img');
 const audioElements = sounds.getElementsByClassName('sounds--audio');
 

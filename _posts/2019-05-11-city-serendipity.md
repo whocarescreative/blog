@@ -111,7 +111,7 @@ Catch a glimpse of green, and go to the park. Daydream. Have a picnic, or a beer
 
 <style>
 #sounds {
-  height: 450px;
+  height: 480px;
   position: relative;
   width: 100%;
   max-width:990px;
@@ -133,9 +133,15 @@ Catch a glimpse of green, and go to the park. Daydream. Have a picnic, or a beer
 #sounds--btn {
   cursor: pointer;
    font-family: 'Varela Round', Helvetica, sans-serif;
-   text-decoration: underline;
    font-size: 30px;
    text-align: center;
+   position: absolute;
+    top:10px;
+    margin: 0 auto;
+    left:0;right:0;
+    font-weight:bold;
+    border-bottom: 3px solid black;
+    width: 90px;
 }
 
 .sounds--img.active {
@@ -150,7 +156,7 @@ Catch a glimpse of green, and go to the park. Daydream. Have a picnic, or a beer
 }
 
 .sounds--img:nth-child(3) {
-  height: 450px;
+  height: 400px;
   margin-top: 80px;
   background-image: url('assets/articles/city-serendipity/img/night.jpg');
 }
@@ -159,41 +165,22 @@ Catch a glimpse of green, and go to the park. Daydream. Have a picnic, or a beer
   height: 350px;
   background-size: cover;
   right:0;
+  background-position: right center;
   background-image: url('assets/articles/city-serendipity/img/park.jpg')
 }
 
 
-.sounds--img.active:nth-child(4) {
-  /* transform: translate(560px, -150px); */
-}
-
-
-
-@keyframes move {
-  from { opacity: 0.2 }
-  to   { opacity: 1; }
-}
-
-#sounds--btn {
-    position: absolute;
-    /* width:100px; */
-    top:10px;
-    margin: 0 auto;
-    left:0;right:0;
-    font-weight:bold;
-    /* transform: translateX(-50px) */
-}
-
 #sounds--btn:after {
-  content: ' ▶'
+  content: ' ▶';
+  font-size: 22px;
 }
 
 #sounds--btn.playing:after {
-  content: '  '
+  content: ' '
 }
 
 .sounds--btn--span {
-  text-decoration: none;
+  text-decoration: underline;
   letter-spacing: -1px;
 }
 
@@ -201,15 +188,15 @@ Catch a glimpse of green, and go to the park. Daydream. Have a picnic, or a beer
 
 @media (max-width: 900px) {
   #sounds {
-    height: 630px;
+    height: 530px;
     display: block;
     flex-direction: column;
   }
 
   #sounds--btn {
-    right: 10px;
+    right: 20px;
     top: auto;
-    bottom: 200px;
+    bottom: 90px;
     margin: auto;
     left: auto;
   }
@@ -235,7 +222,7 @@ Catch a glimpse of green, and go to the park. Daydream. Have a picnic, or a beer
   .sounds--img:nth-child(4) {
     width: calc(50% - 10px);
     left:0;
-    height: 300px;
+    height: 200px;
     background-position: 80% center;
     top: 320px;
   }
@@ -244,9 +231,7 @@ Catch a glimpse of green, and go to the park. Daydream. Have a picnic, or a beer
 </style>
 
  <div id="sounds">
-    <div data-playing="false" id="sounds--btn">
-      <span>Play</span>
-    </div>
+    <div data-playing="false" id="sounds--btn">Play</div>
     <div class="sounds--img"></div>
     <div class="sounds--img"></div>
     <div class="sounds--img"></div>
