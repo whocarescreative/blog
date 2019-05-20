@@ -4,7 +4,7 @@ import {} from './lib/cannon.js';
 import { TextureLoader } from './lib/CubeTexture.js';
 
 const loader = new TextureLoader();
-loader.setPath( 'assets/articles/city-serendipity/' );
+loader.setPath( 'assets/articles/creative-travel/img/' );
 
 const cubeTextures = [];
 for (const texturePath of [

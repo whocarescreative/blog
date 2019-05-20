@@ -1,10 +1,24 @@
 ---
 layout: post
 title:  Creative Travel
-snaketitle: city-serendipity
+date: '2019-05-20'
 subtitle: 'Lose the itinerary'
+snaketitle: 'creative-travel'
 ---
 <style>
+  p {
+    font-size: 30px;
+    line-height: 40px;
+    margin: 30px auto;
+    font-weight: 100;
+    max-width: 900px;
+    box-sizing: border-box;
+    font-family: 'Varela Round', Helvetica, sans-serif;
+}
+
+hr {
+    max-width: 900px;
+}
   .hero {
     margin: 30px auto;
     font-weight: 100;
@@ -59,7 +73,7 @@ subtitle: 'Lose the itinerary'
 
   .eiffel {
     float: left; 
-    shape-outside: url('assets/articles/city-serendipity/eiffel_illustration.png');
+    shape-outside: url('assets/articles/creative-travel/img/eiffel_illustration.png');
   }
 
   @media (max-width: 1111px) {
@@ -120,9 +134,9 @@ To me, exploring a new place is a great excuse to appreciate the novelty of the 
 
 I have to-do lists when I am at home. And to me, it doesn't make sense to do the same when I'm trying to remove  when traveling. I can lose the stiff shell of routine.
 
-<img class="eiffel" src="assets/articles/city-serendipity/eiffel_illustration.png">
+<img class="eiffel" src="assets/articles/creative-travel/img/eiffel_illustration.png">
 
-I understand that research is necessary. Research allows you to understand what is available, and what to avoid. But there is a part of me that says: wouldn't it be great if I was surprised to see the <strong>Eiffel Tower</strong> in Paris?
+I understand that research is necessary. Research allows you to understand what is available, and what to avoid. But there is a part of me that says: <strong>wouldn't it be great if I was surprised to see the Eiffel Tower in Paris?</strong>
 
 In my opinion, travel should be instinctual, and spontaneous. Because being in a new city with no plan is the perfect opportunity to experience a unique kind of freedom.
 
@@ -181,14 +195,14 @@ Catch a glimpse of green, and go to the park. Daydream. Have a picnic, or a beer
 
 .sounds--img:nth-child(2) {
   height: 350px;
-  background-image: url('assets/articles/city-serendipity/img/street.jpg');
+  background-image: url('assets/articles/creative-travel/img/street.jpg');
   background-position: center 60%;
 }
 
 .sounds--img:nth-child(3) {
   height: 400px;
   margin-top: 80px;
-  background-image: url('assets/articles/city-serendipity/img/night.jpg');
+  background-image: url('assets/articles/creative-travel/img/night.jpg');
 }
 
 .sounds--img:nth-child(4) {
@@ -196,7 +210,7 @@ Catch a glimpse of green, and go to the park. Daydream. Have a picnic, or a beer
   background-size: cover;
   right:0;
   background-position: right center;
-  background-image: url('assets/articles/city-serendipity/img/park.jpg')
+  background-image: url('assets/articles/creative-travel/img/park.jpg')
 }
 
 
@@ -265,9 +279,9 @@ Catch a glimpse of green, and go to the park. Daydream. Have a picnic, or a beer
     <div class="sounds--img"></div>
     <div class="sounds--img"></div>
     <div class="sounds--img"></div>
-    <audio class="sounds--audio" src="assets/articles/city-serendipity/mp3/street.mp3" type="audio/mpeg"></audio>
-    <audio class="sounds--audio" src="assets/articles/city-serendipity/mp3/cafe.mp3" type="audio/mpeg"></audio>
-    <audio class="sounds--audio" src="assets/articles/city-serendipity/mp3/park.mp3" type="audio/mpeg"></audio>
+    <audio class="sounds--audio" src="assets/articles/creative-travel/mp3/street.mp3" type="audio/mpeg"></audio>
+    <audio class="sounds--audio" src="assets/articles/creative-travel/mp3/cafe.mp3" type="audio/mpeg"></audio>
+    <audio class="sounds--audio" src="assets/articles/creative-travel/mp3/park.mp3" type="audio/mpeg"></audio>
 </div>
 
 
