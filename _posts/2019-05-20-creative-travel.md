@@ -38,7 +38,7 @@ Instead, it’s an approach to the day:
 
 **The practice of disregarding plans.**
 
-To me, exploring a new place is a great excuse to appreciate the novelty of the moment. And when I impose a detailed itinerary on myself upon arriving into a new city, I feel like I’m inviting stress. Not only that, I feel like I’m offending the my destination by distilling it into a simple checklist.
+To me, exploring a new place is a great excuse to appreciate the novelty of the moment. And when I impose a detailed itinerary on myself upon arriving into a new city, I feel like I’m inviting stress. Not only that, I feel like I’m offending my destination by distilling it into a simple checklist.
 
 I have to-do lists when I am at home. And to me, it doesn’t make sense to do the same when I’m traveling. I can lose the stiff shell of routine.
 
