@@ -4,9 +4,75 @@ title:  City Serendipity
 snaketitle: city-serendipity
 subtitle: 'A different way to travel'
 ---
-<canvas id='canvas' class="grab-cursor"></canvas>
-<h1>City Playground</h1>
-<h2 class="mb-5">Have fun with it</h2>
+<style>
+  .hero {
+    margin: 30px auto;
+    font-weight: 100;
+    max-width: 900px;
+    height: 700px;
+  }
+
+  .title {
+    position: absolute;
+    margin-left: 540px;
+    margin-top: 250px;
+    margin-right: 20px;
+  }
+
+  .title-subtext {
+    font-size: 34px;
+    font-family: 'Varela Round', Helvetica, sans-serif;
+    margin: 0;
+    color: #888;
+  }
+
+  .title-text {
+    font-size: 60px;
+    font-family: 'Varela Round', Helvetica, sans-serif;
+    font-weight: bold;
+    margin: 0;
+    letter-spacing: 4px;
+    line-height: 60px;
+  }
+
+  #canvas {
+    position: absolute;
+    margin-left: -230px;
+  }
+
+  .grab-cursor {
+    cursor: grab;
+  }
+
+  .big {
+    font-size: 40px;
+  }
+
+  @media (max-width: 1111px) {
+    .title, #canvas {
+      position: relative;
+      margin-left: 0;
+      margin-top: 0;
+      max-width: 100%;
+    }
+
+    #canvas {
+      margin-bottom: 20px;
+    }
+
+    .hero {
+      height: auto;
+    }
+  }
+</style>
+
+<div class="hero">
+  <canvas id='canvas' class="grab-cursor" height="568px" width="666px"></canvas>
+  <div class="title">
+    <h1 class="title-text">FREEDOM OF TRAVEL</h1>
+    <h2 class="mb-5 title-subtext">Lose the itinerary.</h2>
+  </div>
+</div>
 
 Going to a new city is like going on a first date.
 
@@ -31,7 +97,7 @@ Catch a glimpse of green, and walk to the park. Have a picnic.
 
 Stay for a few hours at free concert you heard a few blocks away. 
 
-## **Or just sit down, look around your new surroundings, and listen.**
+<p class="big"><strong>Or just sit down, look around your new surroundings, and listen.</strong></p>
 
 
 <style>
