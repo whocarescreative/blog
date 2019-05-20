@@ -12,4 +12,7 @@
     </article>
   </body>
   <script type="module" src="/assets/articles/{{ page.snaketitle }}/main.js"></script>
+  {% if jekyll.environment == 'production' %}
+  {% include analytics.html %}
+  {% endif %}
 </html>
