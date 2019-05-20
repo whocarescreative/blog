@@ -32,6 +32,7 @@ subtitle: 'Lose the itinerary'
     font-weight: bold;
     margin: 0;
     letter-spacing: 4px;
+    text-transform: uppercase;
     line-height: 60px;
   }
 
@@ -69,7 +70,7 @@ subtitle: 'Lose the itinerary'
 <div class="hero">
   <canvas id='canvas' class="grab-cursor" height="568px" width="666px"></canvas>
   <div class="title">
-    <h1 class="title-text">FREEDOM OF TRAVEL</h1>
+    <h1 class="title-text">Creative Travel</h1>
     <h2 class="mb-5 title-subtext">Lose the itinerary</h2>
   </div>
 </div>
@@ -251,7 +252,7 @@ Besides, isn't discovering a spot without plans and in the internet just more fu
 
 Travel is an opportunity to play.
 
-And if I really want to feel like a kid again, I take any chance I can get to play.
+And if you too, want to feel like a kid again, you should play at any chance you get.
 
 <div id="dice"></div>
 
