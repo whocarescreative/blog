@@ -7,7 +7,7 @@ const image = new Image();
 image.addEventListener('load', () => {
   draw();
 });
-image.src = 'assets/articles/creative-travel/img/globe.png';
+image.src = 'assets/articles/creative-travel/img/globe.jpg';
 const FRAME_COUNT = 8;
 const FRAME_HEIGHT = 568;
 const FRAME_WIDTH = 666;
