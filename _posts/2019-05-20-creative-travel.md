@@ -66,9 +66,9 @@ Catch a glimpse of green, and go to the park. Daydream. Have a picnic, or a beer
     <div class="sounds--img"></div>
     <div class="sounds--img"></div>
     <div class="sounds--img"></div>
-    <audio class="sounds--audio" src="/assets/articles/creative-travel/mp3/street.mp3" type="audio/mpeg"></audio>
-    <audio class="sounds--audio" src="/assets/articles/creative-travel/mp3/cafe.mp3" type="audio/mpeg"></audio>
-    <audio class="sounds--audio" src="/assets/articles/creative-travel/mp3/park.mp3" type="audio/mpeg"></audio>
+    <audio class="sounds--audio" preload="auto" src="/assets/articles/creative-travel/mp3/street.mp3" type="audio/mpeg"></audio>
+    <audio class="sounds--audio" preload="auto" src="/assets/articles/creative-travel/mp3/cafe.mp3" type="audio/mpeg"></audio>
+    <audio class="sounds--audio" preload="auto" src="/assets/articles/creative-travel/mp3/park.mp3" type="audio/mpeg"></audio>
 </div>
 
 
