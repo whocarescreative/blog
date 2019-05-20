@@ -48,7 +48,17 @@ subtitle: 'Lose the itinerary'
     font-size: 40px;
   }
 
+  .eiffel {
+    float: left; 
+    shape-outside: url('assets/articles/city-serendipity/eiffel_illustration.png');
+  }
+
   @media (max-width: 1111px) {
+    .eiffel {
+      width: 270px;
+      height: auto;
+    }
+
     .title, #canvas {
       position: relative;
       margin-left: 0;
@@ -62,7 +72,7 @@ subtitle: 'Lose the itinerary'
 
     .hero {
       height: auto;
-    }
+    }    
   }
 </style>
 
@@ -90,7 +100,7 @@ To me, exploring a new place is a great excuse to appreciate the novelty of the 
 
 I have to-do lists when I am at home. And to me, it doesn't make sense to do the same when I'm trying to remove  when traveling. I can lose the stiff shell of routine.
 
-<img style="float: left; shape-outside: url('assets/articles/city-serendipity/eiffel_illustration.png');" src="assets/articles/city-serendipity/eiffel_illustration.png">
+<img class="eiffel" src="assets/articles/city-serendipity/eiffel_illustration.png">
 
 I understand that research is necessary. Research allows you to understand what is available, and what to avoid. But there is a part of me that says: wouldn't it be great if I was surprised to see the <strong>Eiffel Tower</strong> in Paris?
 
