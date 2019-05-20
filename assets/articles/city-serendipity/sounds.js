@@ -9,6 +9,25 @@ Array.from(audioElements).forEach(ae => {
     ae.addEventListener('ended', () => next())
 })
 
+Array.from(soundImgs).forEach((si, i) => {
+    si.addEventListener('click', () => onImageClick(i))
+})
+
+function onImageClick(i) {
+    if (btn.dataset.playing == 'true' && playIndex == i) {
+        pause();
+    } 
+    else { 
+        if (btn.dataset.playing == 'true') {
+            pause();
+        }
+        playIndex = i;
+        audioElement = audioElements[playIndex];
+        play();
+    }
+}
+
+
 function next() {
     pause();
     if (playIndex == 2) {
