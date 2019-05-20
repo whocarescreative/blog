@@ -27,7 +27,7 @@ snaketitle: 'creative-travel'
   </div>
 </div>
 
-I travel because it makes me feel like a kid. Looking at my surroundings for the first time. Running around aimlessly, placing full attention on the present.
+Travelling makes me feel like a kid. Looking at my surroundings for the first time. Running around aimlessly, placing full attention on the present.
 
 Sure, I am capable of running around aimlessly when I am at home too. I probably do that more than I should.
 
