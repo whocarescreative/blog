@@ -92,9 +92,7 @@ I have to-do lists when I am at home. And to me, it doesn't make sense to do the
 
 I understand that research is necessary. Research allows you to understand what is available, and what to avoid. But there is a part of me that says: wouldn't it be great if I was surprised to see the Eiffel Tower in Paris?
 
-
 <div style="width:200px;height:200px;background:red"></div>
-
 
 In my opinion, travel should be instinctual, and spontaneous. Because being in a new city with no plan is the perfect opportunity to experience a unique kind of freedom.
 
@@ -102,7 +100,7 @@ With such an mix of environment, people and senses, cities welcome surprise on t
 
 You might share the same perspective on travel. But if you don't, I invite you to spend a day in a new place letting go of your plans, and letting your senses lead the way instead. Step outside, and walk with no destination.
 
-Eat some fresh bread you smelt across the street. You nose will not let you down.
+Eat some fresh bread you smelt across the street. Your nose will not let you down.
 
 Stop and listen to a free concert you heard a few blocks away. Linger for an hour.
 
@@ -244,7 +242,7 @@ I also encourage you to ask a human, not Google. Avoiding a place because it has
 
 Besides, isn't discovering a spot without plans and in the internet just more fun?
 
-Travel is an opporunity to play.
+Travel is an opportunity to play.
 
 And if I really want to feel like a kid again, I take any chance I can get to play.
 
