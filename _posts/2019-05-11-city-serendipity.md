@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Freedom of Travel
+title:  Creative Travel
 snaketitle: city-serendipity
 subtitle: 'Lose the itinerary'
 ---
@@ -28,12 +28,20 @@ subtitle: 'Lose the itinerary'
 
   .title-text {
     font-size: 60px;
+    
     font-family: 'Varela Round', Helvetica, sans-serif;
     font-weight: bold;
     margin: 0;
+    margin-bottom: 5px;
     letter-spacing: 4px;
     text-transform: uppercase;
     line-height: 60px;
+  }
+
+  .title-date {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-family: 'Varela Round', Helvetica, sans-serif;
   }
 
   #canvas {
@@ -70,8 +78,19 @@ subtitle: 'Lose the itinerary'
 <div class="hero">
   <canvas id='canvas' class="grab-cursor" height="568px" width="666px"></canvas>
   <div class="title">
-    <h1 class="title-text">Creative Travel</h1>
-    <h2 class="mb-5 title-subtext">Lose the itinerary</h2>
+    <h3 class="title-date">
+    {% assign d = page.date | date: "%-d"  %}
+  {{ page.date | date: "%B" }} 
+  {% case d %}
+    {% when '1' or '21' or '31' %}{{ d }}st
+    {% when '2' or '22' %}{{ d }}nd
+    {% when '3' or '23' %}{{ d }}rd
+    {% else %}{{ d }}th
+    {% endcase %}, 
+  {{ page.date | date: "%Y" }}
+    </h3>
+    <h1 class="title-text">{{ page.title }}</h1>
+    <h2 class="title-subtext">{{ page.subtitle }}</h2>
   </div>
 </div>
 
