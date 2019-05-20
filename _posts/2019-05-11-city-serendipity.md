@@ -112,11 +112,16 @@ Stay for a few hours at free concert you heard a few blocks away.
 }
 
 .sounds--img {
+  cursor: pointer;
   opacity: 0.3;
   width: 30%;
   background-size: contain;
   background-repeat: no-repeat;
   transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+#sounds--btn {
+  cursor: pointer;
 }
 
 .sounds--img.active {
