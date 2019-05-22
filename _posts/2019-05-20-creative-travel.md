@@ -85,7 +85,10 @@ Travel is a opportunity to get familiar with uncertainty, and find your own way 
 
 And if I really want to feel like a kid again, I take any chance I can get to play. 
 
-<div id="dice"></div>
+<div style="position: relative;">
+  <div style="background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); position: absolute; height: 60px; width: 100%;"></div>
+  <div id="dice"></div>
+</div>
 
 Travel is creative.
 

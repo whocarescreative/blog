@@ -20,7 +20,7 @@ for (const texturePath of [
 var world;
 var dt = 1 / 60;
 
-const canvasHeight = 300;
+const canvasHeight = 400;
 const canvasWidth = document.documentElement.clientWidth || document.body.clientWidth;
 
 var camera, scene, renderer, gplane=false, clickMarker=false;
@@ -41,6 +41,7 @@ if ( ! Detector.webgl ) Detector.addGetWebGLMessage();
 initCannon();
 init();
 animate();
+render();
 
 function init() {
 
@@ -321,8 +322,10 @@ function onWindowResize() {
 function animate() {
     requestAnimationFrame( animate );
     //controls.update();
-    updatePhysics();
-    render();
+    if (isElementInViewport(container)) {
+        updatePhysics();
+        render();
+    }
 }
 
 function updatePhysics(){
@@ -364,34 +367,36 @@ function initCannon(){
     groundBody.quaternion.setFromAxisAngle(new CANNON.Vec3(1,0,0),-Math.PI/2);
     world.add(groundBody);
 
+    //right
     var groundShape = new CANNON.Plane();
     var groundBody = new CANNON.Body({ mass: 0 });
     groundBody.addShape(groundShape);
-    //groundBody.quaternion.setFromAxisAngle(new CANNON.Vec3(0,1,0),-Math.PI/2);
-    groundBody.position = new CANNON.Vec3(0,0,-7);
+    //subtle rotation
+    groundBody.quaternion.setFromAxisAngle(new CANNON.Vec3(0,1,0), -0.55);
+    groundBody.position = new CANNON.Vec3(0,0,-5.7);
     world.add(groundBody);
-
+    //left
     var groundShape = new CANNON.Plane();
     var groundBody = new CANNON.Body({ mass: 0 });
     groundBody.addShape(groundShape);
-    groundBody.quaternion.setFromAxisAngle(new CANNON.Vec3(1,0,0),Math.PI);
-    groundBody.position = new CANNON.Vec3(0,0,7);
+    groundBody.quaternion.setFromAxisAngle(new CANNON.Vec3(0,1,0),Math.PI + 0.55);
+    groundBody.position = new CANNON.Vec3(0,0,5.7);
     world.add(groundBody);
 
+    //near
     var groundShape = new CANNON.Plane();
     var groundBody = new CANNON.Body({ mass: 0 });
     groundBody.addShape(groundShape);
     groundBody.quaternion.setFromAxisAngle(new CANNON.Vec3(0,1,0),Math.PI * 3/2);
-    groundBody.position = new CANNON.Vec3(4,0,0);
+    groundBody.position = new CANNON.Vec3(2,0,0);
     world.add(groundBody);
-
+    //far
     var groundShape = new CANNON.Plane();
     var groundBody = new CANNON.Body({ mass: 0 });
     groundBody.addShape(groundShape);
     groundBody.quaternion.setFromAxisAngle(new CANNON.Vec3(0,1,0),Math.PI * 1/2);
     groundBody.position = new CANNON.Vec3(-14,0,0);
     world.add(groundBody);
-
 
     // Joint body
     var shape = new CANNON.Sphere(0.1);
@@ -435,4 +440,16 @@ function removeJointConstraint(){
     // Remove constriant from world
     world.removeConstraint(mouseConstraint);
     mouseConstraint = false;
+}
+
+//https://stackoverflow.com/questions/123999/how-to-tell-if-a-dom-element-is-visible-in-the-current-viewport/7557433#7557433
+function isElementInViewport (el) {
+    var rect = el.getBoundingClientRect();
+
+    return (
+        rect.top >= -200 &&
+        rect.left >= -200 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) + 450 &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth) + 450
+    );
 }

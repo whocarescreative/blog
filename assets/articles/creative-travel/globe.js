@@ -4,12 +4,11 @@ const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
 
 const image = new Image();
-const hand = new Image();
+
 image.addEventListener('load', () => {
   draw();
 });
 image.src = 'assets/articles/creative-travel/img/globe.jpg';
-hand.src = 'assets/articles/creative-travel/img/hand.png';
 
 
 const FRAME_COUNT = 8;
@@ -27,6 +26,7 @@ let pos = 0;
 
 let handX = 100;
 let handFrames = 400;
+const handHelper = document.getElementById('hand-helper');
 
 function draw() {
   requestAnimationFrame(draw);
@@ -47,21 +47,21 @@ function draw() {
   step += speed;
   pos = Math.round(mod(step/8, 7));  
 
-  // if (speed < 0.1 && handFrames > 0) {
-  //   ctx.drawImage(
-  //     hand, 
-  //     handX,
-  //     FRAME_HEIGHT / 2,
-  //     30,
-  //     30
-  //   );
+  if (speed < 0.1 && handFrames > 0) {
+    ctx.drawImage(
+      hand, 
+      handX,
+      FRAME_HEIGHT / 2,
+      30,
+      30
+    );
 
-  //   if (handFrames > 50) {
-  //     handX+= 11;
-  //   }
-  //   handFrames--;
-  //   speed = -1.4;
-  // }
+    if (handFrames > 50) {
+      handX+= 11;
+    }
+    handFrames--;
+    speed = -1.4;
+  }
   
 }
 
