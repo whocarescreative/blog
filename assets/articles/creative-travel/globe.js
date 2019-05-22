@@ -20,7 +20,7 @@ canvas.width = FRAME_WIDTH;
 
 const FRAME_Y_OFFSET = 0;
 
-let speed = 1.5;
+let speed = 1;
 let step = 0;
 let pos = 0;
 

@@ -111,14 +111,6 @@ Travel is creative.
 Be creative.
 
 
----
-
-   
-<p style="padding-bottom:20px"></p>
-
-<p style="text-align:center; font-size:15px;"> Whocares? </p>
-
-
 
 
 
