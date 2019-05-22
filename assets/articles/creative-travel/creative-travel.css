@@ -1,6 +1,7 @@
 /**** GLOBAL  ****/
 
 html, body {
+  color: #333;
   overflow-x: hidden;
 }
 
@@ -27,6 +28,7 @@ hr {
   font-weight: 100;
   max-width: 900px;
   height: 700px;
+  position: relative;
 }
 
 .title {
@@ -69,6 +71,39 @@ hr {
   cursor: grab;
 }
 
+#globe-helper {
+  position: absolute;
+  z-index: 99;
+  height: 30px;
+  top: 300px;
+  left:0;
+  margin-left: -180px;
+  opacity: 0;
+}
+
+#globe-helper.active {
+  animation: doit-desktop 2s ease-in-out forwards;
+}
+
+@keyframes doit-desktop {
+  0% {
+    
+  }
+  20% {
+    opacity:1;
+    transform: translateX(0);
+  }
+  80% {
+    opacity: 1;
+    transform: translateX(660px);
+  }
+  100% {
+    transform: translateX(660px);
+    opacity: 0;
+  }
+}
+
+
 .big {
   font-size: 40px;
 }
@@ -91,6 +126,33 @@ hr {
     max-width: 100%;
   }
 
+  #globe-helper {
+    margin-left: 0;
+    top:170px;
+  }
+
+  #globe-helper.active {
+    animation: doit-mobile 2s ease-in-out forwards;
+  }
+  
+  @keyframes doit-mobile {
+    0% {
+      
+    }
+    20% {
+      opacity:1;
+      transform: translateX(0);
+    }
+    80% {
+      opacity: 1;
+      transform: translateX(400px);
+    }
+    100% {
+      transform: translateX(400px);
+      opacity: 0;
+    }
+  }
+
   #canvas {
     margin-bottom: 20px;
   }
@@ -108,6 +170,25 @@ hr {
   }
 }
 
+.text-bold {
+  font-weight: bold;
+}
+
+.text-center {
+  text-align: center;
+}
+
+@media (max-width: 920px) {
+  p {
+      padding: 0 10px;
+      width: 100%;
+  }
+
+  h1, h2, h3 { 
+      padding: 0 10px;
+      width: 100%;
+  }
+}
 
 
 /**** SOUNDS  ****/

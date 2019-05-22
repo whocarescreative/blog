@@ -6,27 +6,4 @@ body, html
     margin: 0;
     -webkit-font-smoothing: antialiased;
     font-family: Lora;
-    color: #333;
 }
-
-
-
-.text-bold {
-    font-weight: bold;
-}
-
-.text-center {
-    text-align: center;
-}
-
-@media (max-width: 920px) {
-    p {
-        padding: 0 10px;
-        width: 100%;
-    }
-
-    h1, h2, h3 { 
-        padding: 0 10px;
-        width: 100%;
-    }
-  }

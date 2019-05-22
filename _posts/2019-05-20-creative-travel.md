@@ -7,6 +7,7 @@ snaketitle: 'creative-travel'
 ---
 
 <div class="hero">
+  <img id="globe-helper" src="/assets/articles/creative-travel/img/hand.png"/>
   <canvas id='canvas' class="grab-cursor" height="568px" width="666px"></canvas>
   <div class="title">
     <h3 class="title-date">
