@@ -3,18 +3,22 @@
   <head>
     {% include head.html %}
     <title>{{ page.title }} | {{ site.title }} </title>
+
+    <meta itemprop="name" content="{{ page.title }} | {{ site.title }}">
+    <meta itemprop="description" content="{{ page.subtitle }}">
+    <meta itemprop="image" content="/assets/articles/{{ page.snaketitle }}/img/thumbnail.png">
+
     <meta property="og:title" content="{{ page.title }} | {{ site.title }}">
+    <meta property="og:site_name" content="{{ site.title }}">
+    <meta property="og:type" content="website">
     <meta property="og:description" content="{{ page.subtitle }}">
     <meta property="og:image" content="/assets/articles/{{ page.snaketitle }}/img/thumbnail.png">
-    <meta content="{{ site.url }}{{ page.url }}" property="og:url">
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}" >
+
     <meta name="twitter:card" content="summary_large_image">
-
-    <meta property="og:site_name" content="{{ site.title }}">
+    <meta name="twitter:title" content="{{ page.title }} | {{ site.title }}">
+    <meta name="twitter:description" content="{{ page.subtitle }}">
     <meta name="twitter:image:alt" content="Creative Travel Thumbnail">
-
-    <!-- <meta property="fb:app_id" content="your_app_id" /> -->
-    <meta name="twitter:site" content="@whocaresink">
-
 
   <link rel="stylesheet" href="/assets/articles/{{ page.snaketitle }}/{{ page.snaketitle }}.css">
   </head>
