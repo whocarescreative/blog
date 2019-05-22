@@ -20,13 +20,14 @@ canvas.width = FRAME_WIDTH;
 
 const FRAME_Y_OFFSET = 0;
 
-let speed = 2;
+let speed = 1.5;
 let step = 0;
 let pos = 0;
 
 let handX = 100;
 let handFrames = 400;
-const handHelper = document.getElementById('hand-helper');
+const globeHelper = document.getElementById('globe-helper');
+let isShowingHand = true;
 
 function draw() {
   requestAnimationFrame(draw);
@@ -47,22 +48,16 @@ function draw() {
   step += speed;
   pos = Math.round(mod(step/8, 7));  
 
-  if (speed < 0.1 && handFrames > 0) {
-    ctx.drawImage(
-      hand, 
-      handX,
-      FRAME_HEIGHT / 2,
-      30,
-      30
-    );
-
-    if (handFrames > 50) {
-      handX+= 11;
+  if (isShowingHand && speed < 0.2) {
+    if (!globeHelper.classList.contains('active')) {
+      globeHelper.classList.add('active');
     }
-    handFrames--;
-    speed = -1.4;
   }
-  
+
+  if (isShowingHand && speed < 0.1) {
+    speed = -5;
+    isShowingHand = false;
+  }
 }
 
 function mod(a, b) {
