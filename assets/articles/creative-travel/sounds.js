@@ -1,5 +1,7 @@
 const btn = document.getElementById('sounds--btn');
-const btnSpan = btn.firstChild;
+
+const pauseEl = document.getElementById('sounds--btn--pause');
+const playEl = document.getElementById('sounds--btn--play');
 
 const soundImgs = document.getElementsByClassName('sounds--img');
 const audioElements = sounds.getElementsByClassName('sounds--audio');
@@ -54,16 +56,18 @@ btn.addEventListener('click',  () => {
 
 function play() {
     btn.dataset.playing = 'true';
-    btn.innerText = 'Pause';
+    pauseEl.style.display = 'inline';
+    playEl.style.display = 'none';
+
     audioElement.play();
-    btn.classList.toggle('playing');
     soundImgs[playIndex].classList.toggle('active');
 }
 
 function pause() {
     btn.dataset.playing = 'false';
-    btn.innerText = 'Play';
+    pauseEl.style.display = 'none';
+    playEl.style.display = 'inline';
+
     audioElement.pause();
-    btn.classList.toggle('playing');
     soundImgs[playIndex].classList.toggle('active');
 }

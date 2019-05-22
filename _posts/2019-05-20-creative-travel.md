@@ -64,7 +64,22 @@ Catch a glimpse of green, and go to the park. Have a picnic.
 
 
  <div id="sounds">
-    <div data-playing="false" id="sounds--btn">Play</div>
+    <div data-playing="false" id="sounds--btn">
+      <div id="sounds--btn--play">
+        <svg width="22" height="22" viewBox="0 0 103 94" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 60V38V33.5H21L48.5 6C66.3824 39.2583 64.2255 56.9303 48.5 87.5L21 60H4Z" fill="black"/>
+          <path d="M86 87.5C101.726 56.9303 103.882 39.2583 86 6M67 87.5C82.7255 56.9303 84.8824 39.2583 67 6M4 38V60H21L48.5 87.5C64.2255 56.9303 66.3824 39.2583 48.5 6L21 33.5H4V38Z" stroke="black" stroke-width="7"/>
+        </svg>
+        Play 
+      </div>
+      <div id="sounds--btn--pause">
+        <svg width="22" height="22" viewBox="0 0 103 94" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 60V38V33.5H21L48.5 6C66.3824 39.2583 64.2255 56.9303 48.5 87.5L21 60H4Z" fill="black"/>
+        </svg>
+        Pause 
+      </div>
+    </div>
+    
     <div class="sounds--img"></div>
     <div class="sounds--img"></div>
     <div class="sounds--img"></div>
