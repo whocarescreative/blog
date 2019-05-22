@@ -1,5 +1,9 @@
 /**** GLOBAL  ****/
 
+body {
+  color: #333;
+}
+
 p {
   font-size: 30px;
   line-height: 40px;
@@ -61,6 +65,37 @@ hr {
   cursor: grab;
 }
 
+#globe-helper {
+  position: absolute;
+  z-index: 99;
+  height: 30px;
+  top: 50%;
+  left:20px;
+  opacity: 0;
+  animation: doit 2.5s ease-in-out forwards 2.8s;
+}
+
+@keyframes doit {
+  0% {
+    
+  }
+  20% {
+    opacity:1;
+    transform: translateX(0);
+  }
+  80% {
+    opacity: 1;
+    transform: translateX(500px);
+  }
+  100% {
+    /* left; */
+    transform: translateX(500px);
+    opacity: 0;
+  }
+}
+
+    
+
 .big {
   font-size: 40px;
 }
@@ -92,6 +127,25 @@ hr {
   }    
 }
 
+.text-bold {
+  font-weight: bold;
+}
+
+.text-center {
+  text-align: center;
+}
+
+@media (max-width: 920px) {
+  p {
+      padding: 0 10px;
+      width: 100%;
+  }
+
+  h1, h2, h3 { 
+      padding: 0 10px;
+      width: 100%;
+  }
+}
 
 
 /**** SOUNDS  ****/
