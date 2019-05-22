@@ -102,6 +102,7 @@ And if I really want to feel like a kid again, I take any chance I can get to pl
 
 <div style="position: relative;">
   <div style="background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); position: absolute; height: 60px; width: 100%;"></div>
+  <img id="dice-helper" src="/assets/articles/creative-travel/img/hand.png"/>
   <div id="dice"></div>
 </div>
 
