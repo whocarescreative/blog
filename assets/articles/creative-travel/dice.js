@@ -227,7 +227,10 @@ function onTouchEnd(e) {
     removeJointConstraint();
 }
 
+const diceHelperEl = document.getElementById('dice-helper');
+
 function onMouseDown(e) {
+    diceHelperEl.style.opacity = 0;
     // Find mesh from a ray
     var entity = findNearestIntersectingObject(e.offsetX,e.offsetY,camera,meshes);
     var pos = entity.point;
