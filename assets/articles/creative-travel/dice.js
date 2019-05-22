@@ -41,6 +41,7 @@ if ( ! Detector.webgl ) Detector.addGetWebGLMessage();
 initCannon();
 init();
 animate();
+render();
 
 function init() {
 
@@ -321,8 +322,10 @@ function onWindowResize() {
 function animate() {
     requestAnimationFrame( animate );
     //controls.update();
-    updatePhysics();
-    render();
+    if (isElementInViewport(container)) {
+        updatePhysics();
+        render();
+    }
 }
 
 function updatePhysics(){
@@ -437,4 +440,16 @@ function removeJointConstraint(){
     // Remove constriant from world
     world.removeConstraint(mouseConstraint);
     mouseConstraint = false;
+}
+
+//https://stackoverflow.com/questions/123999/how-to-tell-if-a-dom-element-is-visible-in-the-current-viewport/7557433#7557433
+function isElementInViewport (el) {
+    var rect = el.getBoundingClientRect();
+
+    return (
+        rect.top >= -200 &&
+        rect.left >= -200 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) + 450 &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth) + 450
+    );
 }
