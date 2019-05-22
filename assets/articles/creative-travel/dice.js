@@ -20,7 +20,7 @@ for (const texturePath of [
 var world;
 var dt = 1 / 60;
 
-const canvasHeight = 300;
+const canvasHeight = 400;
 const canvasWidth = document.documentElement.clientWidth || document.body.clientWidth;
 
 var camera, scene, renderer, gplane=false, clickMarker=false;
@@ -364,34 +364,36 @@ function initCannon(){
     groundBody.quaternion.setFromAxisAngle(new CANNON.Vec3(1,0,0),-Math.PI/2);
     world.add(groundBody);
 
+    //right
     var groundShape = new CANNON.Plane();
     var groundBody = new CANNON.Body({ mass: 0 });
     groundBody.addShape(groundShape);
-    //groundBody.quaternion.setFromAxisAngle(new CANNON.Vec3(0,1,0),-Math.PI/2);
-    groundBody.position = new CANNON.Vec3(0,0,-7);
+    //subtle rotation
+    groundBody.quaternion.setFromAxisAngle(new CANNON.Vec3(0,1,0), -0.55);
+    groundBody.position = new CANNON.Vec3(0,0,-5.7);
     world.add(groundBody);
-
+    //left
     var groundShape = new CANNON.Plane();
     var groundBody = new CANNON.Body({ mass: 0 });
     groundBody.addShape(groundShape);
-    groundBody.quaternion.setFromAxisAngle(new CANNON.Vec3(1,0,0),Math.PI);
-    groundBody.position = new CANNON.Vec3(0,0,7);
+    groundBody.quaternion.setFromAxisAngle(new CANNON.Vec3(0,1,0),Math.PI + 0.55);
+    groundBody.position = new CANNON.Vec3(0,0,5.7);
     world.add(groundBody);
 
+    //near
     var groundShape = new CANNON.Plane();
     var groundBody = new CANNON.Body({ mass: 0 });
     groundBody.addShape(groundShape);
     groundBody.quaternion.setFromAxisAngle(new CANNON.Vec3(0,1,0),Math.PI * 3/2);
-    groundBody.position = new CANNON.Vec3(4,0,0);
+    groundBody.position = new CANNON.Vec3(2,0,0);
     world.add(groundBody);
-
+    //far
     var groundShape = new CANNON.Plane();
     var groundBody = new CANNON.Body({ mass: 0 });
     groundBody.addShape(groundShape);
     groundBody.quaternion.setFromAxisAngle(new CANNON.Vec3(0,1,0),Math.PI * 1/2);
     groundBody.position = new CANNON.Vec3(-14,0,0);
     world.add(groundBody);
-
 
     // Joint body
     var shape = new CANNON.Sphere(0.1);
