@@ -372,14 +372,14 @@ function initCannon(){
     var groundBody = new CANNON.Body({ mass: 0 });
     groundBody.addShape(groundShape);
     //subtle rotation
-    groundBody.quaternion.setFromAxisAngle(new CANNON.Vec3(0,1,0), -0.55);
+    groundBody.quaternion.setFromAxisAngle(new CANNON.Vec3(0,1,0), -0.25);
     groundBody.position = new CANNON.Vec3(0,0,-((canvasWidth < 900)? 4 : 5.7));
     world.add(groundBody);
     //left
     var groundShape = new CANNON.Plane();
     var groundBody = new CANNON.Body({ mass: 0 });
     groundBody.addShape(groundShape);
-    groundBody.quaternion.setFromAxisAngle(new CANNON.Vec3(0,1,0),Math.PI + 0.55);
+    groundBody.quaternion.setFromAxisAngle(new CANNON.Vec3(0,1,0),Math.PI + 0.25);
     groundBody.position = new CANNON.Vec3(0,0,((canvasWidth < 900)? 4 : 5.7));
     world.add(groundBody);
 
