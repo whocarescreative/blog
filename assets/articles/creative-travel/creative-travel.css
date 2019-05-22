@@ -3,6 +3,7 @@
 html, body {
   color: #333;
   overflow-x: hidden;
+  margin:0;
 }
 
 p {
@@ -161,9 +162,6 @@ hr {
     height: auto;
   }    
 
-  article {
-    margin: 0 10px;
-  }
   p {
     font-size: 21px;
     line-height: 29px;
@@ -180,12 +178,12 @@ hr {
 
 @media (max-width: 920px) {
   p {
-      padding: 0 10px;
+      padding: 0 15px;
       width: 100%;
   }
 
   h1, h2, h3 { 
-      padding: 0 10px;
+      padding: 0 15px;
       width: 100%;
   }
 }
