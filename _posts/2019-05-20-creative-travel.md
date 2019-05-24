@@ -4,6 +4,7 @@ title:  Creative Travel
 date: '2019-05-20'
 subtitle: 'Lose the itinerary'
 snaketitle: 'creative-travel'
+image: 'assets/articles/creative-travel/img/creative-travel.jpg'
 ---
 
 <div>

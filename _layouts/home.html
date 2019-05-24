@@ -25,8 +25,8 @@
         <!--<a href="about" class="header-about-link">about</a>-->
       </div>
       <div class="header-flavour">
-        <svg xmlns="http://www.w3.org/2000/svg" width="250" height="160" viewBox="0 0 366.484 275.262" class="header-flavour-dog">
-          <g id="Group_1" data-name="Group 1" transform="translate(-299.252 -525.191) rotate(-20)">
+        <svg xmlns="http://www.w3.org/2000/svg" width="200" height="110" viewBox="0 0 366.484 275.262" class="header-flavour-dog">
+          <g id="Group_1" data-name="Group 1" transform="translate(-260.252 -545.191) rotate(-10)">
             <path id="Path_43" data-name="Path 43" d="M20786.273,6478.614s-5.756,43.673,6.738,63.428,43.238,15.591,43.238,15.591,17.07-71.484,0-103.007-36.229-41.586-74.494-29.818-32.48,40.212-78.572,53.807-99.58,7.306-99.58,7.306,6.641,42.866,37.186,56.122,86.24,15.591,86.24,15.591l41.551,33.468,6.428,7.769" transform="translate(-20505 -5727)" fill="none" stroke="#fff" stroke-width="16"/>
             <path id="Path_44" data-name="Path 44" d="M20837.266,6525.007c13.291,15.952,52.146,58.463,52.146,58.463" transform="translate(-20498 -5734)" fill="none" stroke="#fff" stroke-width="16"/>
             <path id="Path_45" data-name="Path 45" d="M20596.248,6517.6s14.029-3.884,22.225-11.525,12.041-15.624,10.559-19.04c-3.314-7.641-46.039,0-46.039,0Z" transform="translate(-20504 -5722)" fill="#fff"/>
@@ -44,7 +44,7 @@
           <div class="article--date font-secondary">{{ post.date | date: "%-d %B %Y" }}</div>
           <a href="{{ post.url }}" class="article--title font-primary">{{ post.title }}</a>
           <div class="article--subtitle font-secondary text-nodecoration">{{ post.subtitle }}</div>
-          <a href="{{ post.url }}"><img class="article--img" src="assets/articles/{{ post.snaketitle }}/img/{{ post.snaketitle }}.png"></a>
+          <a href="{{ post.url }}"><img class="article--img" src="{{ post.image }}"></a>
         </div>
       {% endfor %}
     </div>
