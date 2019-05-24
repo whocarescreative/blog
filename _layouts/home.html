@@ -43,39 +43,19 @@
     </header>
 
         
-        <div class="articles">
-          {% for post in site.posts %}
-            <a class="article" href="{{ post.url }}">
-              <div class="article--title font-primary text-underline">{{ post.title }}</div>
-              <div class="article--subtitle font-secondary text-nodecoration">{{ post.subtitle }}</div>
-              <div class="article--date font-secondary text-nodecoration">{{ post.date | date: "%B" }}</div>
+    <div class="articles">
+      {% for post in site.posts %}
+        <a class="article" href="{{ post.url }}">
+          <div class="article--title font-primary text-underline">{{ post.title }}</div>
+          <div class="article--subtitle font-secondary text-nodecoration">{{ post.subtitle }}</div>
+          <div class="article--date font-secondary text-nodecoration">{{ post.date | date: "%B" }}</div>
 
-              <img class="article--img" src="assets/articles/{{ post.snaketitle }}/img/{{ post.snaketitle }}.png">
-            </a>
-          {% endfor %}
-        </div>
-        
-        
-    <footer class="footer">
-      <h3 class="footer-title">Follow along</h3>
-      <span class="footer-socials">
-        <a href="www.instagram.com" class="footer-social-link">
-          Instagram
+          <img class="article--img" src="assets/articles/{{ post.snaketitle }}/img/{{ post.snaketitle }}.png">
         </a>
-        <a href="www.twitter.com" class="footer-social-link">
-          Twitter
-        </a>
-      </span>
-      
-      <!-- Begin Mailchimp Signup Form -->
-      <form action="https://ink.us20.list-manage.com/subscribe/post?u=6e6118dcef1be7b1dd65e637b&amp;id=2f1c20dcce" method="post" name="mc-embedded-subscribe-form" target="_blank" novalidate class="footer-email-form">
-          <!--<label for="mce-EMAIL" style="color: white;">Email Address<span>*</span></label>-->
-          <input type="email" value="" placeholder="Email address" name="EMAIL" id="mce-EMAIL">
-          <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-          <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_6e6118dcef1be7b1dd65e637b_2f1c20dcce" tabindex="-1" value=""></div>
-          <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe">
-      </form>
-    </footer>
+      {% endfor %}
+    </div>
+        
+      {% include footer.html %}
   </body>
   {% if jekyll.environment == 'production' %}
   {% include analytics.html %}
