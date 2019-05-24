@@ -15,7 +15,6 @@ html, body {
     color: white;
     font-family: sans-serif;
     padding: 15px 0;
-
     display: grid;
     grid-template-columns: 1fr 225px 475px 1fr;
     grid-column-gap: 20px;
@@ -98,7 +97,7 @@ a {
 .articles {
     color: $primary;
     max-width: $max-width;
-    margin: 50px auto;
+    margin: 70px auto;
 }
 
 .article {
@@ -107,6 +106,7 @@ a {
     display: block;
     height: 300px;
     margin-bottom: 80px;
+    padding-top: 40px;
 }
 
 .article--title {
@@ -135,14 +135,16 @@ a {
 
 .footer-wrap {
     max-width: $max-width;
-    margin: 180px auto 40px;
+    margin: 100px auto 40px auto;
 }
 
 @media (max-width: 1180px) {
 
+    .articles {
+        margin-top: 40px;
+    }
     .header {
         padding: 10px 0;
-        // grid-template-columns: 1fr 125px 575px 1fr;
         grid-template-columns: 1fr 125px 575px 1fr;
     }
 
@@ -152,9 +154,18 @@ a {
         padding-right: 0;
     }
 
-    // .header {
-    //     grid-template-columns: 1fr 145px 555px 1fr;
-    // }
+    .article {
+        margin-bottom: 20px;
+    }
+
+    .article--subtitle {
+        font-weight: bold;
+        font-size: 25px;
+    }
+    
+    .article--img {
+        height:200px;
+    }
 
     .header-text {
         font-size: 16px;
@@ -165,7 +176,7 @@ a {
     }
     
     #wc-logo {
-        height: 65px;
+        height: 68px;
     }
 
     .header-flavour {
