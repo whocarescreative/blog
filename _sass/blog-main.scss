@@ -1,9 +1,148 @@
-@import url('https://fonts.googleapis.com/css?family=Lora');
-@import url('https://fonts.googleapis.com/css?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Muli:700,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
+
+$primary: #2B217C;
+$max-width: 900px;
 
 body, html
 {
     margin: 0;
     -webkit-font-smoothing: antialiased;
-    font-family: Lora;
+    // font-family: Lora;
+}
+
+.header {
+    background: $primary;
+    color: white;
+    font-family: sans-serif;
+    padding: 10px;
+}
+
+a {
+    color: inherit;
+}
+
+.font-primary {
+    font-family: 'Muli', sans-serif;
+    letter-spacing: -3px;
+}
+
+.font-secondary {
+    font-family: 'Roboto Slab', sans-serif;
+}
+
+.text-underline {
+    text-decoration: underline;
+}
+
+.text-nodecoration {
+    text-decoration: none;
+}
+
+.articles {
+    color: $primary;
+    max-width: $max-width;
+    margin: 0 auto;
+}
+
+.article {
+    max-width: $max-width;
+    position: relative;
+    display: block;
+    height: 300px;
+}
+
+.article--title {
+    font-size: 75px;
+    text-decoration: none;
+}
+
+.article--subtitle {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.article--date {
+    position: absolute;
+    bottom:0;
+    left:0;
+}
+
+.article--img {
+    position: absolute;
+    right:0;
+    top:0;
+    z-index: -1;
+    height:300px;
+}
+
+
+.header-text {
+color: white;
+margin: 0 auto;
+max-width: $max-width;
+font-family: sans-serif;
+}
+
+.footer {
+margin: 0 auto;
+max-width: $max-width;
+}
+
+.footer-title {
+color: $primary;
+font-size: 30px;
+font-family: sans-serif;
+margin-bottom: 22px;
+}
+
+.footer-social-link {
+font-size: 16px;
+font-family: sans-serif;
+margin-right: 15px;
+}
+.footer-social-link:link {
+color: $primary;
+}
+.footer-social-link:visited {
+color: $primary;
+}
+.footer-social-link:hover {
+color: $primary;
+}
+.footer-social-link:active {
+color: $primary;
+}
+
+.footer-email-form {
+display: block;
+margin-top: 16px;
+}
+
+#mce-EMAIL {
+border: 3px solid $primary;
+padding: 10px;
+font-size: 20px;
+float:left;
+color: $primary;
+width: calc(100% - 206px);
+}
+#mce-EMAIL:focus {
+outline: none;
+}
+#mce-EMAIL::placeholder {
+color: $primary;
+font-weight: 100;
+}
+
+#mc-embedded-subscribe {
+border: 3px solid $primary;
+padding: 10px 25px;
+width: 150px;
+font-size: 20px;
+margin: 0;
+background: $primary;
+color: white;
+float: left;
+cursor: pointer;
 }
