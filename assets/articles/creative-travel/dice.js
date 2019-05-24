@@ -173,12 +173,12 @@ function onMouseMove(e){
 
 function onTouchDown(e) {
     const { x, y } = processTouch(e.touches);
-    
 
     // Find mesh from a ray
     var entity = findNearestIntersectingObject(x,y,camera,meshes);
     var pos = entity.point;
     if(pos && entity.object.geometry instanceof THREE.BoxGeometry){
+        diceHelperEl.style.opacity = 0;
         constraintDown = true;
         // Set marker on contact point
         setClickMarker(pos.x,pos.y,pos.z,scene);
@@ -230,12 +230,12 @@ function onTouchEnd(e) {
 const diceHelperEl = document.getElementById('dice-helper');
 
 function onMouseDown(e) {
-    diceHelperEl.style.opacity = 0;
     // Find mesh from a ray
     var entity = findNearestIntersectingObject(e.offsetX,e.offsetY,camera,meshes);
     var pos = entity.point;
     if(pos && entity.object.geometry instanceof THREE.BoxGeometry){
         constraintDown = true;
+        diceHelperEl.style.opacity = 0;
         // Set marker on contact point
         setClickMarker(pos.x,pos.y,pos.z,scene);
 
