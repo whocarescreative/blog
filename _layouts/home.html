@@ -27,7 +27,7 @@
           Interactive articles<br>
           We create for you.<br>
         </p>
-        <a href="about" class="header-about-link">about</a>
+        <!--<a href="about" class="header-about-link">about</a>-->
       </div>
       <div class="header-flavour">
         <svg xmlns="http://www.w3.org/2000/svg" width="250" height="160" viewBox="0 0 366.484 275.262" class="header-flavour-dog">
@@ -54,8 +54,9 @@
         </div>
       {% endfor %}
     </div>
-        
-    {% include footer.html %}
+    <footer class="footer-wrap">
+      {% include footer.html %}
+    </footer>
   </body>
   {% if jekyll.environment == 'production' %}
   {% include analytics.html %}

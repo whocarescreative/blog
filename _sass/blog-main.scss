@@ -124,8 +124,13 @@ a {
     height:300px;
 }
 
+.footer-wrap {
+    max-width: $max-width;
+    margin: 180px auto 0;
+}
+
 .footer {
-    margin: 0 auto;
+    overflow: auto;
 }
 
 .footer-title {
@@ -204,7 +209,7 @@ a {
         padding: 0 20px;
     }
 
-    .footer {
+    .footer-wrap {
         padding: 0 20px;
     }
 }
