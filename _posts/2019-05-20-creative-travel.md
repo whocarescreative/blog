@@ -110,11 +110,10 @@ Travel is creative.
 
 Be creative.
 
-
-
-
-
-
+<div style="max-width:900px; margin: 0 auto;">
+{% capture footer %}{% include footer.html %}{% endcapture %}
+{{ footer | markdownify }}
+</div>
 
 
 
