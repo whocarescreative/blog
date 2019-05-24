@@ -4,18 +4,63 @@
 $primary: #2B217C;
 $max-width: 900px;
 
-body, html
-{
+html, body {
     margin: 0;
+    overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
-    // font-family: Lora;
 }
 
 .header {
-    background: $primary;
+    background: #2B217C;
     color: white;
     font-family: sans-serif;
-    padding: 10px;
+    padding: 15px;
+
+    display: grid;
+    grid-template-columns: 1fr 900px 1fr;
+    grid-column-gap: 0px;
+}
+
+.header-logo {
+    grid-column: 1;
+    text-align: right;
+}
+
+.header-flavour {
+    grid-column: 3;
+}
+
+.header-flavour-dog {
+    position: absolute;
+    right: -36px;
+}
+
+.header-content {
+    grid-column: 2;
+}
+
+.header-text {
+    margin: 10px 0 10px 0;
+    font-size: 20px;
+    font-family: sans-serif;
+    color: white;
+}
+
+.header-about-link {
+    font-size: 20px;
+    font-family: sans-serif;
+}
+.header-about-link:link {
+    color: white;
+}
+.header-about-link:visited {
+    color: white;
+}
+.header-about-link:hover {
+    color: white;
+}
+.header-about-link:active {
+    color: white;
 }
 
 a {
@@ -85,64 +130,64 @@ font-family: sans-serif;
 }
 
 .footer {
-margin: 0 auto;
-max-width: $max-width;
+    margin: 0 auto;
+    max-width: 900px;
 }
 
 .footer-title {
-color: $primary;
-font-size: 30px;
-font-family: sans-serif;
-margin-bottom: 22px;
+    color: #2B217C;
+    font-size: 30px;
+    font-family: sans-serif;
+    margin-bottom: 22px;
 }
 
 .footer-social-link {
-font-size: 16px;
-font-family: sans-serif;
-margin-right: 15px;
+    font-size: 16px;
+    font-family: sans-serif;
+    margin-right: 15px;
 }
 .footer-social-link:link {
-color: $primary;
+    color: #2B217C;
 }
 .footer-social-link:visited {
-color: $primary;
+    color: #2B217C;
 }
 .footer-social-link:hover {
-color: $primary;
+    color: #2B217C;
 }
 .footer-social-link:active {
-color: $primary;
+    color: #2B217C;
 }
 
 .footer-email-form {
-display: block;
-margin-top: 16px;
+    display: block;
+    margin-top: 16px;
 }
 
 #mce-EMAIL {
-border: 3px solid $primary;
-padding: 10px;
-font-size: 20px;
-float:left;
-color: $primary;
-width: calc(100% - 206px);
+    border: 3px solid #2B217C;
+    padding: 10px;
+    font-size: 20px;
+    float:left;
+    color: #2B217C;
+    width: calc(100% - 206px);
 }
 #mce-EMAIL:focus {
-outline: none;
+    outline: none;
 }
 #mce-EMAIL::placeholder {
-color: $primary;
-font-weight: 100;
+    color: #2B217C;
+    font-weight: 100;
 }
 
 #mc-embedded-subscribe {
-border: 3px solid $primary;
-padding: 10px 25px;
-width: 150px;
-font-size: 20px;
-margin: 0;
-background: $primary;
-color: white;
-float: left;
-cursor: pointer;
+    border: 3px solid #2B217C;
+    padding: 10px 25px;
+    width: 150px;
+    font-size: 20px;
+    margin: 0;
+    background: #2B217C;
+    color: white;
+    float: left;
+    cursor: pointer;
 }
