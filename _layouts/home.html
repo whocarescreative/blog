@@ -24,7 +24,7 @@
       <div class="header-content">
         <p class="header-text">
           A party of two.<br>
-          Interactive articles<br>
+          Interactive articles,<br>
           We create for you.<br>
         </p>
         <!--<a href="about" class="header-about-link">about</a>-->
@@ -46,10 +46,9 @@
     <div class="articles">
       {% for post in site.posts %}
         <div class="article">
+          <div class="article--date font-secondary">{{ post.date | date: "%-d %B %Y" }}</div>
           <a href="{{ post.url }}" class="article--title font-primary">{{ post.title }}</a>
           <div class="article--subtitle font-secondary text-nodecoration">{{ post.subtitle }}</div>
-          <div class="article--date font-secondary text-nodecoration">{{ post.date | date: "%B" }}</div>
-
           <a href="{{ post.url }}"><img class="article--img" src="assets/articles/{{ post.snaketitle }}/img/{{ post.snaketitle }}.png"></a>
         </div>
       {% endfor %}

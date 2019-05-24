@@ -72,7 +72,6 @@ a {
 
 .font-primary {
     font-family: 'Muli', sans-serif;
-    letter-spacing: -3px;
     font-weight: 900;
 }
 
@@ -91,7 +90,7 @@ a {
 .articles {
     color: $primary;
     max-width: $max-width;
-    margin: 40px auto;
+    margin: 50px auto;
 }
 
 .article {
@@ -99,21 +98,23 @@ a {
     position: relative;
     display: block;
     height: 300px;
+    margin-bottom: 80px;
 }
 
 .article--title {
     font-size: 85px;
+    // letter-spacing: -1px;
 }
 
 .article--subtitle {
     font-weight: bold;
-    font-size: 20px;
+    font-size: 30px;
+    // margin: 0 0 40px 0;
 }
 
 .article--date {
-    position: absolute;
-    bottom:0;
-    left:0;
+    font-weight: bold;
+    font-size: 20px;
 }
 
 .article--img {
