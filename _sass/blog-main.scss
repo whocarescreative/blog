@@ -127,69 +127,7 @@ a {
 
 .footer-wrap {
     max-width: $max-width;
-    margin: 180px auto 0;
-}
-
-.footer {
-    overflow: auto;
-}
-
-.footer-title {
-    color: $primary;
-    font-size: 30px;
-    font-family: 'Muli', sans-serif;
-    margin-bottom: 22px;
-}
-
-.footer-social-link {
-    font-size: 16px;
-    font-family: 'Roboto Slab', sans-serif;
-    margin-right: 15px;
-}
-.footer-social-link:link {
-    color: $primary;
-}
-.footer-social-link:visited {
-    color: $primary;
-}
-.footer-social-link:hover {
-    color: $primary;
-}
-.footer-social-link:active {
-    color: $primary;
-}
-
-.footer-email-form {
-    display: block;
-    margin-top: 16px;
-}
-
-#mce-EMAIL {
-    border: 3px solid $primary;
-    padding: 10px;
-    font-size: 20px;
-    float:left;
-    color: $primary;
-    width: calc(100% - 206px);
-}
-#mce-EMAIL:focus {
-    outline: none;
-}
-#mce-EMAIL::placeholder {
-    color: $primary;
-    font-family: 'Roboto Slab', sans-serif;
-}
-
-#mc-embedded-subscribe {
-    border: 3px solid $primary;
-    padding: 10px 25px;
-    width: 150px;
-    font-size: 20px;
-    margin: 0;
-    background: $primary;
-    color: white;
-    float: left;
-    cursor: pointer;
+    margin: 180px auto 40px;
 }
 
 @media (max-width: 1180px) {

@@ -6,6 +6,23 @@ subtitle: 'Lose the itinerary'
 snaketitle: 'creative-travel'
 ---
 
+<div>
+  <a href="/">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="155" height="55" viewBox="0 0 375.83 215" style="margin: 0 auto; margin-top: 15px; display: block;">
+      <defs>
+        <clipPath id="clip-path">
+          <rect width="375.83" height="215" fill="none"/>
+        </clipPath>
+      </defs>
+      <g id="Component_1_5" data-name="Component 1 – 5" clip-path="url(#clip-path)">
+        <text id="Who_Cares" data-name="Who 
+    Cares" transform="translate(0 107.339)" fill="black" font-size="89" font-family="Muli" font-weight="900" letter-spacing="-0.058em"><tspan x="0" y="0">Who </tspan><tspan x="0" y="82">Cares</tspan></text>
+        <path id="Path_8" data-name="Path 8" d="M39.924,122.59v-45.8q2.818.47,5.167.822a30.124,30.124,0,0,0,4.462.352A39.932,39.932,0,0,0,61.53,76.208a32.4,32.4,0,0,0,9.746-4.814A22.426,22.426,0,0,0,77.734,64a19.681,19.681,0,0,0,2.348-9.511,17.554,17.554,0,0,0-4.7-12.212q-4.7-5.167-12.682-5.167a14.72,14.72,0,0,0-11.625,4.932q-4.345,4.932-4.345,12.917H0A49.873,49.873,0,0,1,4.814,33,53.41,53.41,0,0,1,18.2,15.617,62.366,62.366,0,0,1,38.4,4.11,75.233,75.233,0,0,1,63.643,0,67.1,67.1,0,0,1,88.89,4.58,61.888,61.888,0,0,1,108.5,16.909a54.74,54.74,0,0,1,12.682,17.848,51.193,51.193,0,0,1,4.462,20.9q0,35.227-42.507,50.022V122.59Zm-4.7,36.871a27.52,27.52,0,1,1,2.114,10.686A27.393,27.393,0,0,1,35.227,159.461Z" transform="translate(243.408 34) rotate(13) scale(0.8, 0.8)" fill="black"/>
+      </g>
+    </svg>
+  </a>
+</div>
+
 <div class="hero">
   <img id="globe-helper" src="/assets/articles/creative-travel/img/hand.png"/>
   <canvas id='canvas' class="grab-cursor" height="568px" width="666px"></canvas>
@@ -110,18 +127,7 @@ Travel is creative.
 
 Be creative.
 
-<div style="max-width:900px; margin: 160px auto 160px;">
-{% capture footer %}{% include footer.html %}{% endcapture %}
+<div style="max-width:900px; margin: 100px auto 30px;">
+{% capture footer %}{% include article-footer.html %}{% endcapture %}
 {{ footer | markdownify }}
 </div>
-
-
-
-
-
-
-
-
-
-
-
