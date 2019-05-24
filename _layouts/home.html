@@ -8,7 +8,7 @@
   <body>
     <header class="header">
       <div class="header-logo">
-        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="265" height="115" viewBox="0 0 375.83 215">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="225" height="95" viewBox="0 0 375.83 215">
           <defs>
             <clipPath id="clip-path">
               <rect width="375.83" height="215" fill="none"/>
@@ -30,7 +30,7 @@
         <a href="about" class="header-about-link">about</a>
       </div>
       <div class="header-flavour">
-        <svg xmlns="http://www.w3.org/2000/svg" width="300" height="180" viewBox="0 0 366.484 275.262" class="header-flavour-dog">
+        <svg xmlns="http://www.w3.org/2000/svg" width="250" height="160" viewBox="0 0 366.484 275.262" class="header-flavour-dog">
           <g id="Group_1" data-name="Group 1" transform="translate(-299.252 -525.191) rotate(-20)">
             <path id="Path_43" data-name="Path 43" d="M20786.273,6478.614s-5.756,43.673,6.738,63.428,43.238,15.591,43.238,15.591,17.07-71.484,0-103.007-36.229-41.586-74.494-29.818-32.48,40.212-78.572,53.807-99.58,7.306-99.58,7.306,6.641,42.866,37.186,56.122,86.24,15.591,86.24,15.591l41.551,33.468,6.428,7.769" transform="translate(-20505 -5727)" fill="none" stroke="#fff" stroke-width="16"/>
             <path id="Path_44" data-name="Path 44" d="M20837.266,6525.007c13.291,15.952,52.146,58.463,52.146,58.463" transform="translate(-20498 -5734)" fill="none" stroke="#fff" stroke-width="16"/>
@@ -55,7 +55,27 @@
       {% endfor %}
     </div>
         
-      {% include footer.html %}
+        
+    <footer class="footer">
+      <h3 class="footer-title">Follow along</h3>
+      <span class="footer-socials">
+        <a href="www.instagram.com" class="footer-social-link">
+          Instagram
+        </a>
+        <a href="www.twitter.com" class="footer-social-link">
+          Twitter
+        </a>
+      </span>
+      
+      <!-- Begin Mailchimp Signup Form -->
+      <form action="https://ink.us20.list-manage.com/subscribe/post?u=6e6118dcef1be7b1dd65e637b&amp;id=2f1c20dcce" method="post" name="mc-embedded-subscribe-form" target="_blank" novalidate class="footer-email-form">
+          <!--<label for="mce-EMAIL" style="color: white;">Email Address<span>*</span></label>-->
+          <input type="email" value="" placeholder="Email address" name="EMAIL" id="mce-EMAIL">
+          <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+          <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_6e6118dcef1be7b1dd65e637b_2f1c20dcce" tabindex="-1" value=""></div>
+          <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe">
+      </form>
+    </footer>
   </body>
   {% if jekyll.environment == 'production' %}
   {% include analytics.html %}

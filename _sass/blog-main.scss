@@ -17,7 +17,7 @@ html, body {
     padding: 15px;
 
     display: grid;
-    grid-template-columns: 1fr $max-width 1fr;
+    grid-template-columns: 1fr 225px 475px 1fr;
     grid-column-gap: 0px;
 }
 
@@ -27,7 +27,7 @@ html, body {
 }
 
 .header-flavour {
-    grid-column: 3;
+    grid-column: 4;
 }
 
 .header-flavour-dog {
@@ -36,19 +36,22 @@ html, body {
 }
 
 .header-content {
-    grid-column: 2;
+    grid-column: 2 / 3;
 }
 
 .header-text {
-    margin: 10px 0 10px 0;
-    font-size: 20px;
+    margin: 5px 0 10px 0;
+    font-size: 16px;
     font-family: sans-serif;
     color: white;
+    font-family: 'Roboto Slab', sans-serif;
 }
 
 .header-about-link {
-    font-size: 20px;
+    font-size: 16px;
     font-family: sans-serif;
+    font-weight: bold;
+    font-family: 'Roboto Slab', sans-serif;
 }
 .header-about-link:link {
     color: white;
@@ -75,7 +78,6 @@ a {
 
 .font-secondary {
     font-family: 'Roboto Slab', sans-serif;
-   
 }
 
 .text-underline {
@@ -131,13 +133,13 @@ a {
 .footer-title {
     color: $primary;
     font-size: 30px;
-    font-family: sans-serif;
+    font-family: 'Muli', sans-serif;
     margin-bottom: 22px;
 }
 
 .footer-social-link {
     font-size: 16px;
-    font-family: sans-serif;
+    font-family: 'Roboto Slab', sans-serif;
     margin-right: 15px;
 }
 .footer-social-link:link {
@@ -171,7 +173,7 @@ a {
 }
 #mce-EMAIL::placeholder {
     color: $primary;
-    font-weight: 100;
+    font-family: 'Roboto Slab', sans-serif;
 }
 
 #mc-embedded-subscribe {
@@ -184,4 +186,19 @@ a {
     color: white;
     float: left;
     cursor: pointer;
+}
+
+@media (max-width: 1180px) {
+    .header-logo {
+        grid-column: 2;
+        text-align: left;
+    }
+
+    .header-content {
+        grid-column: 3;
+    }
+
+    .header-flavour {
+        display: none;
+    }
 }
