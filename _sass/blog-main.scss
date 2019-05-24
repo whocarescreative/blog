@@ -11,7 +11,7 @@ html, body {
 }
 
 .header {
-    background: #2B217C;
+    background: $primary;
     color: white;
     font-family: sans-serif;
     padding: 15px;
@@ -125,10 +125,10 @@ a {
 
 
 .header-text {
-color: white;
-margin: 0 auto;
-max-width: $max-width;
-font-family: sans-serif;
+    color: white;
+    margin: 0 auto;
+    max-width: $max-width;
+    font-family: sans-serif;
 }
 
 .footer {
@@ -137,7 +137,7 @@ font-family: sans-serif;
 }
 
 .footer-title {
-    color: #2B217C;
+    color: $primary;
     font-size: 30px;
     font-family: sans-serif;
     margin-bottom: 22px;
@@ -149,16 +149,16 @@ font-family: sans-serif;
     margin-right: 15px;
 }
 .footer-social-link:link {
-    color: #2B217C;
+    color: $primary;
 }
 .footer-social-link:visited {
-    color: #2B217C;
+    color: $primary;
 }
 .footer-social-link:hover {
-    color: #2B217C;
+    color: $primary;
 }
 .footer-social-link:active {
-    color: #2B217C;
+    color: $primary;
 }
 
 .footer-email-form {
@@ -167,28 +167,28 @@ font-family: sans-serif;
 }
 
 #mce-EMAIL {
-    border: 3px solid #2B217C;
+    border: 3px solid $primary;
     padding: 10px;
     font-size: 20px;
     float:left;
-    color: #2B217C;
+    color: $primary;
     width: calc(100% - 206px);
 }
 #mce-EMAIL:focus {
     outline: none;
 }
 #mce-EMAIL::placeholder {
-    color: #2B217C;
+    color: $primary;
     font-weight: 100;
 }
 
 #mc-embedded-subscribe {
-    border: 3px solid #2B217C;
+    border: 3px solid $primary;
     padding: 10px 25px;
     width: 150px;
     font-size: 20px;
     margin: 0;
-    background: #2B217C;
+    background: $primary;
     color: white;
     float: left;
     cursor: pointer;
