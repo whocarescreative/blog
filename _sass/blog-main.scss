@@ -139,18 +139,33 @@ a {
 }
 
 @media (max-width: 1180px) {
+
+    .header {
+        padding: 10px 0;
+        // grid-template-columns: 1fr 125px 575px 1fr;
+        grid-template-columns: 1fr 125px 575px 1fr;
+    }
+
     .header-logo {
         grid-column: 2;
         text-align: left;
         padding-right: 0;
     }
 
-    .header {
-        grid-template-columns: 1fr 145px 555px 1fr;
+    // .header {
+    //     grid-template-columns: 1fr 145px 555px 1fr;
+    // }
+
+    .header-text {
+        font-size: 16px;
     }
 
     .header-content {
         grid-column: 3;
+    }
+    
+    #wc-logo {
+        height: 65px;
     }
 
     .header-flavour {
