@@ -42,23 +42,24 @@ image: 'assets/articles/creative-travel/img/creative-travel.jpg'
   </div>
 </div>
 
-Travelling makes me feel like a kid. Looking at my surroundings for the first time. Running around aimlessly, placing full attention on the present.
+Travelling makes me feel like a kid. Looking at my new surroundings in awe. Running around with no sense of direction.
 
-I mean, I am capable of running around aimlessly when I am in my home city too. I probably do that more than I should.
+Playing games too: trying to decipher the puzzling new language around me, attempting to understand the unwritten rules of my destination, and being the target of *Spot the Tourist*.
 
-But when I’m on the road, there’s one particular part of childhood I try to practice.
- 
+But when I’m on the road, there is one particular part of childhood I try to practice.
+
 It’s not basic arithmetic. That’s too advanced for me.
 
-Instead, it’s an approach to the day:
+Instead, it’s a child’s approach to the day:
 
 **The practice of disregarding plans.**
 
-To me, exploring a new place is a great excuse to appreciate the novelty of the moment. And when I impose a detailed itinerary on myself upon arriving into a new city, I feel like I’m inviting stress. Not only that, I feel like I’m offending my destination by distilling it into a simple checklist.
+
+To me, exploring a new place is a great excuse to appreciate the novelty of the moment. And when I force a detailed itinerary on myself as I arrive into a new city, I feel like I’m inviting stress. Not only that, I feel like I’m offending my destination by distilling it into a simple checklist.
 
 I have to-do lists when I am at home. And to me, it doesn’t make sense to do the same when I’m traveling. I can lose the stiff shell of routine.
 
-I understand that researching your destination is necessary. Research allows you to understand what is available, and what to avoid. But there is a part of me that says:  <strong>wouldn’t it be great if I was surprised to see the Eiffel Tower in Paris? </strong>
+I understand that research is necessary. Research allows one to understand what is available, and what to avoid. But there is a part of me that says: <strong>wouldn’t it be great if I was surprised to see the Eiffel Tower in Paris?</strong>
 
 
 <img class="eiffel" src="assets/articles/creative-travel/img/eiffel_illustration.png">
@@ -108,13 +109,13 @@ Catch a glimpse of green, and go to the park. Have a picnic.
 </div>
 
 
-By following your instincts instead of a curated guide, you can start creating your own, unique relationship with a city. You can read all about your destination beforehand, but you won’t know how you feel until you get there. It’s like online dating.
+By following your instincts instead of a curated guide, you can start creating your own, unique relationship with a city. You can read all about a particular place beforehand, but you won’t know how you feel until you get there.
 
-And when there is such an abundance of places to see in a city: parks, restaurantes, museums, you can relax knowing you won’t get to see every landmark a destination has to offer. Finding your taste for travel is the same as discovering your own taste in art, music or film. Out of all the choices, you find what attracts you.
+When there is such an abundance of places to see in a city: parks, restaurants, and museums, you can relax knowing you won’t get to see every possible landmark. Finding your taste for travel is the same as discovering your own taste in art, music or film. Out of all the choices, you find what attracts you.
 
 I also encourage you to ask a human, not Google. Avoiding a place because it doesn’t have five stars is limiting, and you might make a new friend while taking risks eating food you’ve never heard of before. 
 
-Travel is a opportunity to get familiar with uncertainty, and find your own way to play in a new city. 
+Travel is an opportunity to get familiar with uncertainty, and to find your own way to play in a new city. 
 
 And if I really want to feel like a kid again, I take any chance I can get to play. 
 
