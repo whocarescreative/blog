@@ -93,4 +93,34 @@
         <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_6e6118dcef1be7b1dd65e637b_2f1c20dcce" tabindex="-1" value=""></div>
         <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe">
     </form>
+    <script>
+        //https://stackoverflow.com/questions/3007480/determine-if-user-navigated-from-mobile-safari/29696509#29696509
+        //this is a hacky solution to the subscribe button not working in ios
+        var ua = window.navigator.userAgent;
+        var iOS = !!ua.match(/iPad/i) || !!ua.match(/iPhone/i);
+        var webkit = !!ua.match(/WebKit/i);
+        var iOSSafari = iOS && webkit && !ua.match(/CriOS/i);
+
+        const footerEl = document.getElementsByClassName('footer')[0];
+            const iosSafetyLinkEl = document.createElement('a');
+            iosSafetyLinkEl.href = 'https://ink.us20.list-manage.com/subscribe/post?u=6e6118dcef1be7b1dd65e637b&id=2f1c20dcce';
+            iosSafetyLinkEl.innerHTML = 'Subscribe button not working? please click here to subscribe.';
+            iosSafetyLinkEl.style.fontSize = '14px';
+            iosSafetyLinkEl.style.paddingTop = '10px';
+            iosSafetyLinkEl.style.float = 'right';
+            iosSafetyLinkEl.classList.add('footer-social-link');
+            footerEl.appendChild(iosSafetyLinkEl);
+        
+        if (iOSSafari) {
+            const footerEl = document.getElementsByClassName('footer')[0];
+            const iosSafetyLinkEl = document.createElement('a');
+            iosSafetyLinkEl.href = 'https://ink.us20.list-manage.com/subscribe/post?u=6e6118dcef1be7b1dd65e637b&id=2f1c20dcce';
+            iosSafetyLinkEl.innerHTML = 'Subscribe button not working? please click here to subscribe.';
+            iosSafetyLinkEl.style.fontSize = '14px';
+            iosSafetyLinkEl.style.paddingTop = '10px';
+            iosSafetyLinkEl.style.float = 'right';
+            iosSafetyLinkEl.classList.add('footer-social-link');
+            footerEl.appendChild(iosSafetyLinkEl);
+        }
+    </script>
 </footer>
