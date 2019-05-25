@@ -411,37 +411,39 @@ function initCannon(){
 }
 
 function addMouseConstraint(x,y,z,body) {
-    // The cannon body constrained by the mouse joint
-    constrainedBody = body;
+    if (!mouseConstraint) {
+        // The cannon body constrained by the mouse joint
+        constrainedBody = body;
 
-    // Vector to the clicked point, relative to the body
-    var v1 = new CANNON.Vec3(x,y,z).vsub(constrainedBody.position);
+        // Vector to the clicked point, relative to the body
+        var v1 = new CANNON.Vec3(x,y,z).vsub(constrainedBody.position);
 
-    // Apply anti-quaternion to vector to tranform it into the local body coordinate system
-    var antiRot = constrainedBody.quaternion.inverse();
-    pivot = antiRot.vmult(v1); // pivot is not in local body coordinates
+        // Apply anti-quaternion to vector to tranform it into the local body coordinate system
+        var antiRot = constrainedBody.quaternion.inverse();
+        pivot = antiRot.vmult(v1); // pivot is not in local body coordinates
 
-    // Move the cannon click marker particle to the click position
-    jointBody.position.set(x,y,z);
+        // Move the cannon click marker particle to the click position
+        jointBody.position.set(x,y,z);
 
-    // Create a new constraint
-    // The pivot for the jointBody is zero
-    mouseConstraint = new CANNON.PointToPointConstraint(constrainedBody, pivot, jointBody, new CANNON.Vec3(0,0,0));
+        // Create a new constraint
+        // The pivot for the jointBody is zero
+        mouseConstraint = new CANNON.PointToPointConstraint(constrainedBody, pivot, jointBody, new CANNON.Vec3(0,0,0));
 
-    // Add the constriant to world
-    world.addConstraint(mouseConstraint);
+        // Add the constriant to world
+        world.addConstraint(mouseConstraint);
+    }
 }
 
 // This functions moves the transparent joint body to a new postion in space
 function moveJointToPoint(x,y,z) {
     // Move the joint body to a new position
     jointBody.position.set(x,y,z);
-    mouseConstraint.update();
+    if (mouseConstraint) mouseConstraint.update();
 }
 
 function removeJointConstraint(){
     // Remove constriant from world
-    world.removeConstraint(mouseConstraint);
+    if (mouseConstraint) world.removeConstraint(mouseConstraint);
     mouseConstraint = false;
 }
 
