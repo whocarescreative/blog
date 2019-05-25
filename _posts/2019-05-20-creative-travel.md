@@ -51,7 +51,7 @@ Instead, it’s a child’s approach to the day:
 
 To me, exploring a new place is a great excuse to appreciate the novelty of the moment. And when I force a detailed itinerary on myself as I arrive into a new city, I feel like I’m inviting stress. Not only that, I feel like I’m offending my destination by distilling it into a simple checklist.
 
-I have to-do lists when I am at home. And to me, it doesn’t make sense to do the same when I’m traveling. I can lose the stiff shell of routine.
+I have to-do lists when I am at home. And to me, it doesn’t make sense to do the same when I’m travelling. I can lose the stiff shell of routine.
 
 I understand that research is necessary. Research allows one to understand what is available, and what to avoid. But there is a part of me that says: <strong>wouldn’t it be great if I was surprised to see the Eiffel Tower in Paris?</strong>
 
