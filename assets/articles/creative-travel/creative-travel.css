@@ -8,6 +8,15 @@ html, body {
   margin:0;
 }
 
+.article-logo {
+  position: absolute;
+  height: 40px;
+  width: auto;
+  top: 15px;
+  margin:0 auto;left:0;right:0;
+  z-index:99;
+}
+
 p {
   font-size: 30px;
   line-height: 40px;
