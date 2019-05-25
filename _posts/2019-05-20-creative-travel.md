@@ -38,7 +38,7 @@ image: 'assets/articles/creative-travel/img/creative-travel.jpg'
 
 Travelling makes me feel like a kid. Looking at my new surroundings in awe. Running around with no sense of direction.
 
-Playing games too: trying to decipher the puzzling new language around me, attempting to understand the unwritten rules of my destination, and being the target of *Spot the Tourist*.
+Playing games too: trying to decipher the puzzling language around me, attempting to understand the unwritten rules of my destination, and being the target of *Spot the Tourist*.
 
 But when I’m on the road, there is one particular part of childhood I try to practice.
 
