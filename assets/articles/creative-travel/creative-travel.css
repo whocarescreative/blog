@@ -228,7 +228,7 @@ hr {
   position: relative;
   width: 100%;
   max-width:990px;
-  margin: 30px auto;
+  margin: 30px auto 70px auto;
   display: flex;
   justify-content: space-between;
 
@@ -297,6 +297,7 @@ hr {
     height: 530px;
     display: block;
     flex-direction: column;
+    margin: 30px auto;
   }
 
   #sounds--btn {
