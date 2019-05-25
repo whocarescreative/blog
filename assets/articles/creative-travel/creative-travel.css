@@ -8,6 +8,15 @@ html, body {
   margin:0;
 }
 
+.article-logo {
+  position: absolute;
+  height: 40px;
+  width: auto;
+  top: 15px;
+  margin:0 auto;left:0;right:0;
+  z-index:99;
+}
+
 p {
   font-size: 30px;
   line-height: 40px;
@@ -219,7 +228,7 @@ hr {
   position: relative;
   width: 100%;
   max-width:990px;
-  margin: 30px auto;
+  margin: 30px auto 70px auto;
   display: flex;
   justify-content: space-between;
 
@@ -242,8 +251,9 @@ hr {
   top:10px;
   margin: 0 auto;
   left:0;right:0;
+  text-align: center;
   font-weight:bold;
-  width: 120px;
+  width: 140px;
 }
 
 #sounds--btn--pause, #sounds--btn--play {
@@ -287,6 +297,7 @@ hr {
     height: 530px;
     display: block;
     flex-direction: column;
+    margin: 30px auto;
   }
 
   #sounds--btn {

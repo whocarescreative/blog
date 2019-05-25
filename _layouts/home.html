@@ -44,7 +44,7 @@
           <div class="article--date font-secondary">{{ post.date | date: "%-d %B %Y" }}</div>
           <a href="{{ post.url }}" class="article--title font-primary">{{ post.title }}</a>
           <div class="article--subtitle font-secondary text-nodecoration">{{ post.subtitle }}</div>
-          <div class="article--img"><a style="display: block;"href="{{ post.url }}"><img src="{{ post.image }}"></a></div>
+          <div class="article--img-wrap"><a style="display: block;" href="{{ post.url }}"><img class="article--img" src="{{ post.image }}"></a></div>
         </div>
       {% endfor %}
     </div>
