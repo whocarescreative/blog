@@ -251,8 +251,9 @@ hr {
   top:10px;
   margin: 0 auto;
   left:0;right:0;
+  text-align: center;
   font-weight:bold;
-  width: 120px;
+  width: 140px;
 }
 
 #sounds--btn--pause, #sounds--btn--play {
