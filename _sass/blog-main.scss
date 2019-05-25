@@ -128,14 +128,19 @@ a {
 .article--date {
     font-weight: bold;
     font-size: 17px;
+    z-index: 1;
 }
 
-.article--img {
+.article--img-wrap {
     position: absolute;
     right:0;
     top:0;
     z-index: 0;
-    height:300px;
+    height:350px;
+}
+
+.article--img {
+    height:350px;
 }
 
 .footer-wrap {
@@ -166,6 +171,10 @@ a {
     .article--subtitle {
         font-weight: bold;
         font-size: 25px;
+    }
+
+    .article--img-wrap {
+       height:200px;
     }
     
     .article--img {
